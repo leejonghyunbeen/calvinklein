@@ -7,52 +7,46 @@
 </head>
 <body>
     <header>
-        <div class="textbox"><!-- 상단 전체틀 -->
+        <div class="text_box"><!-- 상단 전체틀 -->
             <div class="wapper"> <!-- 텍스트와 <> 아이콘 -->
                 <div class="a_text">
-                    <a href="#">Holiday is about Giving | 구매하기</a>
-                    <a href="#">특별한 홀리데이 컬렉션을 만나보세요 | 구매하기</a>
-                    <a href="#">Special Offer 브랜드 세일 | 구매하기</a>
-                    <a href="#">멤버십 회원한정 겨울 아우터 구매시 사은품 증정 | 구매하기</a>
-                    <a href="#">청바지 무료 교환/환불 혜택받기 | 구매하기</a>
+                    <a href="#">Holiday is about Giving <span>구매하기</span></a>
+                    <a href="#">특별한 홀리데이 컬렉션을 만나보세요 <span>구매하기</span></a>
+                    <a href="#">Special Offer 브랜드 세일 <span>구매하기</span></a>
+                    <a href="#">멤버십 회원한정 겨울 아우터 구매시 사은품 증정<span>구매하기</span></a>
+                    <a href="#">청바지 무료 교환/환불 혜택받기 <span>구매하기</span></a>
                 </div>
                 <div class="next_freeview"><!-- < > 이미지 -->
-                    <a href="#"><img src="./img/icon/before_icon.png" alt=""></a>
-                    <a href="#"><img src="./img/icon/next icon.png" alt=""></a>
+                    <a href="#" class="prev_before"><img src="./img/icon/before_icon.png" alt="이전"></a>
+                    <a href="#" class="prev_next"><img src="./img/icon/next icon.png" alt="다음"></a>
                 </div>
             </div>
             <div class="close">
-                <button type="button">
-                    <img src="./img/icon/close_icon.png" alt="#">
-                </button>
+                    <a href="#" class="close_icon"><img src="./img/icon/close_icon.png" alt="#"></a>
             </div>
         </div>
-        <div class="headcontents"> <!-- 상단 검색및내정보 -->
+        <div class="head_contents"> <!-- 상단 검색및내정보 -->
             <div class="logo_gender"><!-- 왼쪽 -->
-                <div class="logo"><!-- 로고 -->
-                    <a href="./img/calvinklein_imgaes/full-logo-white.svg"></a><!-- 로고 화이트 -->
-                </div>
-                <div class="gender"><!-- 남,여 -->
+                <h1><a href="#"><img src="./img/calvinklein_imgaes/full-logo-white.svg" alt=""></a></h1>="logo"><!-- 로고 -->
+                <nav><!-- 남,여 -->
                     <a href="#">men</a>
                     <a href="#">women</a>
-                </div>
+                </nav>
             </div>
-            <div class="center"><!-- 검색 -->
-                <form action="#" method="get" id="search_bar">
+            <form action="#" method="get" id="search_bar"><!-- 검색 -->
                     <fieldset>
-                        <legend id="skip"></legend>
+                        <legend class="skip">검색바</legend>
                         <div class="search"><!-- 검색바랑 이미지 -->
                             <input type="search" name="search" id="search" placeholder="&quot;트렁크를 검색해 보세요&quot;">
-                            <a href="#"><img src="./img/icon/search_icon.png" alt=""></a>
+                            <button type="submit"><img src="./img/icon/search_icon.png" alt="검색"></button>
                         </div>
                     </fieldset>
-                </form>
-            </div>
+            </form>
             <div class="right"><!-- 오른쪽 위시리스트 맵 등 -->
-                <a href="#"><img src="./img/icon/map_icon.png" alt=""></a>
-                <a href="#"><img src="./img/icon/mypage.png" alt=""></a>
-                <a href="#"><img src="./img/icon/haert_icon.png" alt=""></a>
-                <a href="#"><img src="./img/icon/bag_icon.png" alt=""></a>
+                <a href="#"><img src="./img/icon/map_icon.png" alt="매장찾기"></a>
+                <a href="#"><img src="./img/icon/mypage.png" alt="마이페이지"></a>
+                <a href="#"><img src="./img/icon/haert_icon.png" alt="관심리스트"></a>
+                <a href="#"><img src="./img/icon/bag_icon.png" alt="장바구니"></a>
             </div>
         </div>
     </header>
