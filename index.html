@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calvin klein</title>
+    <title>캘빈클라인 공식 온라인 스토어 (한국)</title>
 </head>
 <body>
     <header>
         <div class="text_box"><!-- 상단 전체틀 -->
-            <div class="warper"> <!-- 텍스트와 <> 아이콘 -->
+            <div class="wrap"> <!-- 텍스트와 <> 아이콘 -->
                 <div class="a_text">
                     <a href="#">Holiday is about Giving <span>구매하기</span></a>
                     <a href="#">특별한 홀리데이 컬렉션을 만나보세요 <span>구매하기</span></a>
@@ -17,13 +17,11 @@
                     <a href="#">청바지 무료 교환/환불 혜택받기 <span>구매하기</span></a>
                 </div>
                 <div class="next_freeview"><!-- < > 이미지 -->
-                    <a href="#" class="prev_before"><img src="./img/icon/before_icon.png" alt="이전"></a>
-                    <a href="#" class="prev_next"><img src="./img/icon/next_icon.png" alt="다음"></a>
+                    <a href="#" class="prev"><img src="./img/icon/before_icon.png" alt="이전"></a>
+                    <a href="#" class="next"><img src="./img/icon/next_icon.png" alt="다음"></a>
                 </div>
             </div>
-            <div class="close">
-                    <a href="#" class="close_icon"><img src="./img/icon/close_icon.png" alt="#"></a>
-            </div>
+            <a href="#" class="close_icon"><img src="./img/icon/close_icon.png" alt="#"></a>
         </div>
         <div class="head_contents"> <!-- 상단 검색및내정보 -->
             <div class="logo_gender"><!-- 왼쪽 -->
@@ -36,10 +34,8 @@
             <form action="#" method="get" id="search_bar"><!-- 검색 -->
                     <fieldset>
                         <legend class="skip">검색바</legend>
-                        <div class="search"><!-- 검색바랑 이미지 -->
-                            <input type="search" name="search" id="search" placeholder="&quot;트렁크를 검색해 보세요&quot;">
-                            <button type="submit"><img src="./img/icon/search_icon.png" alt="검색"></button>
-                        </div>
+                        <input type="search" name="search" id="search" placeholder="&quot;트렁크를 검색해 보세요&quot;"><!-- 검색바랑 이미지 -->
+                        <button type="submit" id=""><img src="./img/icon/search_icon.png" alt="검색"></button> 
                     </fieldset>
             </form>
             <div class="right"><!-- 오른쪽 위시리스트 맵 등 -->
@@ -51,7 +47,7 @@
         </div>
     </header>
     <main>  
-        <div class="hollyday"><!-- 처음 메인 페이지 1 --> <!-- 백그라운드 고민시 사진 -->
+        <div class="holiyday"><!-- 처음 메인 페이지 1 --> <!-- 백그라운드 고민시 사진 -->
             <div class="giving"> <!-- 홀리데이 선물  -->
                 <h1>Holiyday is about Giving</h1>
                 <a href="#">특별한 선물 구매하기</a> <!-- border withe 박스 -->
@@ -64,7 +60,7 @@
             </div>
         </div>
         <ul class="content"> <!-- 첫번째 상품 -->
-            <li class="product_1">
+            <li>
                 <div class="product_main">
                     <a href="#"><img src="./img/calvinklein_imgaes/C27_01_J325246BEH_MO-TP-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
                     <a href="#"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
@@ -79,10 +75,10 @@
                 <div class="product_info">
                     <a href="#">남성 CK 블랙 마이크로 싱글 로우라이즈 드로즈</a>
                     <p><em>63,200</em>원<del>79,000원</del></p>
-                    <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
+                    <a href="#" class="color_choice">더 많은 색상 선택 가능</a>
                 </div>
             </li>
-        </ul>
+        </ul> 
         <ul class="content"><!-- 두번째 상품 -->
             <li class="product_2">
                 <div class="product_main">
@@ -130,8 +126,7 @@
                         <div class="right_bottom"><!-- 밑에가격쪽 -->
                             <div class="bottom_left"> <!-- 왼쪽 -->
                                 <p class="price"><span><del>109,000원</del></span></p>
-                                <p class="close"><img src="./img/icon/close_icon.png" alt=""></p><!-- 곱하기 -->
-                                <p class="Price">1</p>
+                                <p class="Price">1 <span><img src="./img/icon/close_icon.png" alt=""></span></p><!-- 곱하기 -->
                             </div>
                             <div class="bottom_right">
                                 <p>87,200원</p>
@@ -144,14 +139,12 @@
                         <p>소계<span>(1개 제품)</span></p><!-- 괄호 색  -->
                         <p><em>87,200원</em>원</p><!-- em 볼드 -->
                     </div>
-                    <div class="bottom_last">
-                        <a href="#" class="basket_view">장바구니 보기</a>
-                        <a href="#" class="buy">구매하기</a>
-                    </div>
+                    <a href="#" class="basket_view">장바구니 보기</a>
+                    <a href="#" class="buy">구매하기</a>
                 </div>
             </div>
         </div>
-        <div class="holiyday_gitf"><!-- 메인페이지 두번쨰 내용 -->
+        <div class="holiyday_gift"><!-- 메인페이지 두번쨰 내용 -->
             <div class="contents_left">
                 <h1>Giving the Perfect Gift</h1>
                 <p>특별한 홀리데이 기프트 패키징 혜택을 누려보세요</p>
@@ -162,88 +155,73 @@
                 <img src="#" alt="#"><!-- 이미지가없음 ㅠㅠㅠ  -->
             </div>
         </div>
-        <div class="winter_prodict">
+        <div class="winter_prodict"><!-- 백그라운드 이미지 겨울 아우터 주기 -->
             <div class="prodict_contents">
                 <h1>Winter Comfort with Calvin Klein</h1>
                 <p class="introduction">추운 바람에도 스타일리시하게, CK의 아우터웨어 컬렉션을 만나보세요</p>
-                <p class="outer_buy"><a href="#">겨울 아우터 구매하기</a></p><!-- border -->
-                <p class="hoodie_buy"><a href="#">아우터 구매하기</a></p><!-- border -->
+                <a href="#" class="outer_buy">겨울 아우터 구매하기</a><!-- border -->
+                <a href="#" class="hoodie_buy">아우터 구매하기</a><!-- border -->
             </div>
         </div> 
         <div class="category"><!-- 백그라운드로 이미지 주기 -->
-            <div class="women_hoodie"><!-- 여자 후드티 -->
+            <a class="women_hoodie"><!-- 여자 후드티 -->
                 <h1><a href="#">여성 후드티</a></h1>
                 <p>구매하기</p>
-            </div>
+            </a>
         </div>
         <div class="bottom_contents"><!-- 백그라운드 이미지 주기 -->
-            <h1>Timeless Essentials</h1>
-            <p class="best_buy">베스트 셀러 구매하기</p>
-            <p class="exclusive_buy">ONLINE EXCLUSIVE 구매하기</p>
+            <div class="contents_sub">
+                <h1>Timeless Essentials</h1>
+                <p class="best_buy">베스트 셀러 구매하기</p>
+                <p class="exclusive_buy">ONLINE EXCLUSIVE 구매하기</p>
+            </div>
         </div>
         <div class="member_join"> <!-- 백그라운드 검은색 -->
             <h1>My Calvins 멤버십 혜택</h1>
             <p>My Calvins 멤버에게 주어지는 웰컴, 생일, 그리고 회원 전용 혜택을 누려보세요! Black 멤버로 업그레이드 하시고 더 많은 혜택을 받으세요!</p>
-            <a href="#"><span>가입/로그인하기</span></a>
-        </div>
-        <div class="bottom_menu"> <!-- 하단메뉴 -->
-            <div class="contents1">
-                <p>마이페이지</p>
-                <ul>
-                    <li><a href="#">주문 내역</a></li>
-                    <li><a href="#">쿠폰</a></li>
-                    <li><a href="#">위시리스트</a></li>
-                </ul>
-            </div>
-            <div class="contents2">
-                <p>고객센터</p>
-                <ul>
-                    <li><a href="#">연락처</a></li>
-                    <li><a href="#">사이즈 가이드</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">반송 및 교환 정책</a></li>
-                    <li><a href="#">결제 방법</a></li>
-                </ul>
-            </div>
-            <div class="conrents3">
-                <p>About Calvin Klein</p>
-                <ul>
-                    <li><a href="#">캘빈클라인 소개</a></li>
-                    <li><a href="#">매장 찾기</a></li>
-                    <li><a href="#">이용 약관</a></li>
-                    <li><a href="#">개인정보 처리방침</a></li>
-                    <li><a href="#">개인정보 보호 책무</a></li>
-                    <li><a href="#">위조품  </a></li>
-                    <li><a href="#">My Calvins 멤버십 프로그램</a></li>
-                </ul>
-            </div>
-            <div class="contents4">
-                <p>컬렉션</p>
-                <ul>
-                    <li><a href="#">남성</a></li>
-                    <li><a href="#">여성</a></li>
-                    <li><a href="#">언더웨어</a></li>
-                    <li><a href="#">캘빈클라인 데님</a></li>
-                    <li><a href="#">데님 핏 가이드</a></li>
-                    <li><a href="#">데님 관리법</a></li>
-                    <li><a href="#">View All</a></li>
-                </ul>
-            </div>
+            <a href="#">가입/로그인하기</a>
         </div>
     </main>
     <footer>
-        <div class="footer_contents">
-            <div class="sharing">
-                <a href="#"><img src="#" alt=""></a><!-- 카카오톡 -->
-                <a href="#"><img src="#" alt=""></a><!-- 네이버 -->
-                <a href="#"><img src="#" alt=""></a><!-- 페이스북 -->
-                <a href="#"><img src="#" alt=""></a><!-- 핀터레스트 -->
-                <a href="#"><img src="#" alt=""></a><!-- 트위터 -->
-                <a href="#"><img src="#" alt=""></a><!-- 인스타 -->
-                <a href="#"><img src="#" alt=""></a><!-- 유튜브 -->
+        <div class="first_footer"> <!-- 하단메뉴 -->
+            <div class="contents1">
+                <h1>마이페이지</h1>
+                <a href="#">주문 내역</a>
+                <a href="#">쿠폰</a>
+                <a href="#">위시리스트</a>
             </div>
+            <div class="contents2">
+                <h1>고객센터</h1>
+                    <a href="#">연락처</a>
+                    <a href="#">사이즈 가이드</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">반송 및 교환 정책</a>
+                    <a href="#">결제 방법</a>
+            </div>
+            <div class="conrents3">
+                <h1>About Calvin Klein</h1>
+                    <a href="#">캘빈클라인 소개</a>
+                    <a href="#">매장 찾기</a>
+                    <a href="#">이용 약관</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">개인정보 보호 책무</a>
+                    <a href="#">위조품  </a>
+                    <a href="#">My Calvins 멤버십 프로그램</a>
+            </div>
+            <div class="contents4">
+                <h1>컬렉션</h1>
+                    <a href="#">남성</a>
+                    <a href="#">여성</a>
+                    <a href="#">언더웨어</a>
+                    <a href="#">캘빈클라인 데님</a>
+                    <a href="#">데님 핏 가이드</a>
+                    <a href="#">데님 관리법</a>
+                    <a href="#">View All</a>
+            </div>
+        </div>
+        <div class="footer_contents">
             <div class="footer_text">
-                <p>
+                <address>
                     피브이에이치코리아 유한회사<br>
                     대표자명 후이혼치우제프리<br>
                     소재지 서울특별시 강남구 테헤란로 508 해성2빌딩 18층<br>
@@ -251,8 +229,17 @@
                     통신판매업 신고번호 2019-서울강남-03726<br>
                     고객센터 1600-1811<br>
                     이메일 CustomerServiceKR@ck.com
-                </p>
-                <p>Copyright © 2023 Calvin Klein. All rights reserved.</p>
+                </address>
+                <p>Copyright &copy; 2023 Calvin Klein. All rights reserved.</p>
+            </div>
+            <div class="sns">
+                <a href="#"><img src="#" alt=""></a><!-- 카카오톡 -->
+                <a href="#"><img src="#" alt=""></a><!-- 네이버 -->
+                <a href="#"><img src="#" alt=""></a><!-- 페이스북 -->
+                <a href="#"><img src="#" alt=""></a><!-- 핀터레스트 -->
+                <a href="#"><img src="#" alt=""></a><!-- 트위터 -->
+                <a href="#"><img src="#" alt=""></a><!-- 인스타 -->
+                <a href="#"><img src="#" alt=""></a><!-- 유튜브 -->
             </div>
         </div>
     </footer>
