@@ -1,0 +1,20 @@
+html,body,* {box-sizing: border-box;}
+html,body,h1,h2,h3,h4,h5,h6,
+p,em,strong,a,span,sup,sub,del,q,blockquote,code,
+ul,ol,li,dl,dd,dt,
+table,tr,td,th,thead,tbody,tfoot,
+form,fieldset,legend,input,select,option,button,label,textarea
+header,main,footer,nav,section,article,figcaption,figure,aside,
+address,details,mark,time,video,img,summary,iframe,div {
+    margin: 0 ; padding: 0;
+    font-size: 1.0rem; font-style: normal; font-weight: normal;
+    line-height: 1.2; color: #000;
+    text-decoration: none;
+}
+ul,ol,li {list-style: none;}
+button {cursor: pointer;}
+table,tr,td,th {border-collapse: collapse;}
+/* html에서 의미적으로 존재하나 css디자인상에선 숨겨야하는 요소에 사용 */
+.skip {display: none;}
+/* font-awesome unicode 전용 클래스 */
+.fa {font-family:'Font Awesome 5 Free','Font Awesome 5 Brands';font-weight: 600;}
