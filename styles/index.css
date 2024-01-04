@@ -1,0 +1,38 @@
+main {}
+main .holiyday {
+    background: url(/img/calvinklein_imgaes/main_home.jpg) center;
+    background-size: cover;
+} /* 여기에 고민시 이미지 */
+main .holiyday .giving {
+    padding-top: 90px; text-align: center;
+}
+main .holiyday .giving h1 {color: #fff; font-size:2rem; font-weight: bold; padding-bottom: 30px;}
+main .holiyday .giving a {
+    border: 1px solid #fff; color: #fff; padding:5px;
+}
+main .holiyday .holiyday_buy {
+    padding:400px 0 0 50px; color: #fff;  margin-bottom: 50px;
+    display: flex; flex-flow: column nowrap;
+}
+main .holiyday .holiyday_buy h1 {
+    color: #fff; font-size: 2rem;
+}
+main .holiyday .holiyday_buy p {color: #fff; font-size: 0.825rem;
+    margin-bottom: 80px; padding-top: 15px;
+}
+main .holiyday .holiyday_buy .holiyday_colation {
+    color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
+    display: inline-block; width: max-content;
+}
+main .holiyday .holiyday_buy .brand_saie {
+    color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;  
+    display: inline-block;width: max-content;
+}
+.product_contents {display: flex;}
+.product_contents li {}
+.product_contents li .product_main{margin-right: 5px;}
+.product_contents li .product_main .photo{}
+.product_contents li .product_main .photo img {width: 548px; height: 685px;  }
+.product_contents li .product_main .favorite  {position: relative;}
+.product_contents li .product_main .favorite img {position: absolute; right: 15px; bottom: 500px; }
+.product_contents li .product_main .size {}
