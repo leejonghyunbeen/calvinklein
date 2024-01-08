@@ -1,6 +1,6 @@
 main {}
 main .holiyday {
-    background: url(/img/calvinklein_imgaes/main_home.jpg) center;
+    background: url(/img/calvinklein_imgaes/main_home.jpg) center bottom;
     background-size: cover;
 } /* 여기에 고민시 이미지 */
 main .holiyday .giving {
@@ -31,19 +31,54 @@ main .holiyday .holiyday_buy .brand_saie {
 }
 .product_contents {display: flex;}
 .product_contents li {}
-.product_contents li .product_main{
-    margin-right: 5px; position: relative; 
-}
+.product_contents li .product_main{}
 .product_contents li .product_main .photo{}
-.product_contents li .product_main .photo img {width: 548px; height: 685px;  }
+.product_contents li .product_main .photo img {width: 548px; height: 685px; }
 .product_contents li .product_main .favorite  {}
 .product_contents li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 .product_contents li .product_main .size {}
 .product_contents li .product_main .size a {}
 .product_contents li .product_main .product_info {}
-.product_contents li .product_info a {font-size: 0.875rem;}
+.product_contents li .product_info a {font-size: 0.875rem;}   
 .product_contents li .product_info p {font-size: 0.875rem;}
 .product_contents li .product_info p em {}
 .product_contents li .product_info p del {}
 .product_contents li .product_info a {}
 
+/* 일단메인부터 */
+.new_product {}/* 배경에 여자베너 */
+.new_product .product_contents {
+    background: url(/img/calvinklein_imgaes/pc_home_240103.jpg);
+    background-size: cover;
+}
+.new_product .product_contents .contes_sub{
+    text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
+    display: flex; flex-flow: column nowrap;
+}
+.new_product .product_contents .contes_sub h1 {
+    color: #fff;  font-size: 2rem;
+}
+.new_product .product_contents .contes_sub .introduction {
+    color: #fff; font-size: 0.825rem;
+    margin-bottom: 80px; padding-top: 15px;
+}
+.new_product .product_contents .contes_sub .new_buy {border: 1px solid #fff;  padding: 10px 65px 10px 65px;  
+    display: inline-block;width: max-content; margin-bottom: 40px; color: #fff;
+
+}
+.main1_product {display: flex;}
+.main1_product li {}
+.main1_product li .product_main {position: relative;}
+.main1_product li .product_main .photo {}
+.main1_product li .product_main .photo img {width: 548px; height: 685px;}
+.main1_product li .product_main .favorite {}
+.main1_product li .product_main .favorite img{position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
+.main1_product li .product_main .size {}
+.main1_product li .product_main .size a {}
+.Outerwear_freebies {display: flex;}
+.Outerwear_freebies .freebies_left {}
+.Outerwear_freebies .freebies_.left_contents {}
+.Outerwear_freebies .freebies_.left_contents h1 {}
+.Outerwear_freebies .freebies_.left_contents .introduction {}
+.Outerwear_freebies .freebies_.left_contents .men_buy {}
+.Outerwear_freebies .freebies_.left_contents .women_buy {}
