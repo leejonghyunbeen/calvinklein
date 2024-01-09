@@ -75,10 +75,62 @@ main .holiyday .holiyday_buy .brand_saie {
 .main1_product li .product_main .favorite img{position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 .main1_product li .product_main .size {}
 .main1_product li .product_main .size a {}
-.Outerwear_freebies {display: flex;}
-.Outerwear_freebies .freebies_left {}
-.Outerwear_freebies .freebies_.left_contents {}
-.Outerwear_freebies .freebies_.left_contents h1 {}
-.Outerwear_freebies .freebies_.left_contents .introduction {}
-.Outerwear_freebies .freebies_.left_contents .men_buy {}
-.Outerwear_freebies .freebies_.left_contents .women_buy {}
+/* 사은품 구매 */
+.Outerwear_freebies {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; margin-top: 20px;
+}
+.Outerwear_freebies .freebies_left {
+    margin: 0 auto;
+}
+.Outerwear_freebies .freebies_left .left_contents {display: flex; flex-flow: column nowrap; }
+.Outerwear_freebies .freebies_left .left_contents h1 {font-size: 2rem;}
+.Outerwear_freebies .freebies_left .left_contents p {}
+.Outerwear_freebies .freebies_left .left_contents .buy {
+    font-size: 0.825rem;
+    border: 1px solid #000;  padding: 10px 30px 10px 30px;  
+    display: inline-block;width: max-content; margin-bottom: 40px;
+}
+
+.Outerwear_freebies .freebies_left .left_contents .join {
+    font-size: 0.825rem;
+    border: 1px solid #000;  padding: 10px 30px 10px 30px;  
+    display: inline-block;width: max-content; margin-bottom: 40px;
+}
+/* 가방 구입칸 */
+.winter_product {
+    background: url(/img/calvinklein_imgaes/pc_women_acc_231019.jpg);
+    background-size: cover;
+}
+.winter_product .product_contents {   
+    text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
+    }
+.winter_product .product_contents .contes_sub {
+    display: flex;  flex-flow: column nowrap;
+}
+.winter_product .product_contents .contes_sub h1 {color: #fff;  font-size: 2rem;}
+.winter_product .product_contents .contes_sub .introduction{  
+    color: #fff; font-size: 0.825rem;
+    margin-bottom: 80px; padding-top: 15px;}
+.winter_product .product_contents .contes_sub .men_buy{
+    color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
+    display: inline-block; width: max-content; margin-bottom: 20px;
+}
+.winter_product .product_contents .contes_sub .women_buy{
+    color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
+    display: inline-block; width: max-content; margin-bottom: 40px;
+}
+/* 다시 가방 상품 */
+.fashion_product {display: flex;}
+.fashion_product li {}
+.fashion_product li .product_main {}
+.fashion_product li .product_main .photo{}
+.fashion_product li .product_main .photo img {}
+.fashion_product li .product_main .favorite {}
+.fashion_product li .product_main .favorite img {}
+.fashion_product li .product_main .size {}
+.fashion_product li .product_main .size a {}
+.fashion_product li .product_info {}
+.fashion_product li .product_info a {}
+.fashion_product li .product_info p {}
+.fashion_product li .product_info p em {}
+.fashion_product li .product_info p del {}
