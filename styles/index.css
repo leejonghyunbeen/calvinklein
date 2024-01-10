@@ -1,6 +1,6 @@
 main {}
 main .holiyday {
-    background: url(/img/calvinklein_imgaes/main_home.jpg) center bottom;
+    background: url(../img/calvinklein_imgaes/main_home.jpg) center bottom;
     background-size: cover;
 } /* 여기에 고민시 이미지 */
 main .holiyday .giving {
@@ -33,7 +33,7 @@ main .holiyday .holiyday_buy .brand_saie {
 .product_contents li {}
 .product_contents li .product_main{position: relative;}
 .product_contents li .product_main .photo{}
-.product_contents li .product_main .photo img {width: 548px; height: 685px; }
+.product_contents li .product_main .photo img {width: 548px; height: 685px; padding-right: 10px;}
 .product_contents li .product_main .favorite  {}
 .product_contents li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 .product_contents li .product_main .size {}
@@ -48,7 +48,7 @@ main .holiyday .holiyday_buy .brand_saie {
 /* 일단메인부터 */
 .new_product {}/* 배경에 여자베너 */
 .new_product .product_contents {
-    background: url(/img/calvinklein_imgaes/pc_home_240103.jpg);
+    background: url(../img/calvinklein_imgaes/pc_home_240103.jpg);
     background-size: cover;
 }
 .new_product .product_contents .contes_sub{
@@ -70,7 +70,7 @@ main .holiyday .holiyday_buy .brand_saie {
 .main1_product li {}
 .main1_product li .product_main {position: relative;}
 .main1_product li .product_main .photo {}
-.main1_product li .product_main .photo img {width: 548px; height: 685px;}
+.main1_product li .product_main .photo img {width: 548px; height: 685px; padding-right: 10px;}
 .main1_product li .product_main .favorite {}
 .main1_product li .product_main .favorite img{position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 .main1_product li .product_main .size {}
@@ -82,24 +82,29 @@ main .holiyday .holiyday_buy .brand_saie {
 .Outerwear_freebies .freebies_left {
     margin: 0 auto;
 }
-.Outerwear_freebies .freebies_left .left_contents {display: flex; flex-flow: column nowrap; }
+.Outerwear_freebies .freebies_left .left_contents {display: flex; flex-flow: column nowrap; 
+    margin-top: 100px;}
 .Outerwear_freebies .freebies_left .left_contents h1 {font-size: 2rem;}
-.Outerwear_freebies .freebies_left .left_contents p {}
+.Outerwear_freebies .freebies_left .left_contents p {margin-bottom: 100px;margin-top: 40px;}
 .Outerwear_freebies .freebies_left .left_contents .buy {
-    margin-top: 200px;
     font-size: 0.825rem;
-    border: 1px solid #000;  padding: 10px 30px 10px 30px;  
+    border: 1px solid #000;  padding: 15px 40px 15px 40px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
 
 .Outerwear_freebies .freebies_left .left_contents .join {
     font-size: 0.825rem;
-    border: 1px solid #000;  padding: 10px 30px 10px 30px;  
+    border: 1px solid #000;  padding: 15px 40px 15px 40px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
+.main1_product
+.main1_product li {}
+.main1_product li .product_info {}
+.main1_product li .product_info a {}
+.main1_product li .product_info span {color: red;}
 /* 가방 구입칸 */
 .winter_product {
-    background: url(/img/calvinklein_imgaes/pc_women_acc_231019.jpg);
+    background: url(../img/calvinklein_imgaes/pc_women_acc_231019.jpg);
     background-size: cover;
 }
 .winter_product .product_contents {   
@@ -125,7 +130,7 @@ main .holiyday .holiyday_buy .brand_saie {
 .fashion_product li {}
 .fashion_product li .product_main {position: relative;}
 .fashion_product li .product_main .photo{}
-.fashion_product li .product_main .photo img {width: 548px; height: 685px;}
+.fashion_product li .product_main .photo img {width: 548px; height: 685px; padding-right: 10px;}
 .fashion_product li .product_main .favorite {}
 .fashion_product li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 .fashion_product li .product_main .size {}
@@ -136,26 +141,79 @@ main .holiyday .holiyday_buy .brand_saie {
 .fashion_product li .product_info p em {}
 .fashion_product li .product_info p del {}
 /* 카테고리 */
-.category {display: flex;}
+.category {display: flex
+    ;}
 /* 여성후드티 */
-.category .women_hoodie {
-    background: url(/img/calvinklein_imgaes/pc_home_category_tile_kazuha_231017.jpg);}
+.category .women_hoodie{
+    background: url(../img/calvinklein_imgaes/pc_home_category_tile_kazuha_231017.jpg);}
 .category .women_hoodie h1 {}
 .category .women_hoodie h1 a {}
 .category .women_hoodie p {}
 /* 남성후드 */
-.category .men_hoodie {background: url(/img/calvinklein_imgaes/pc_men_tile_231227_categori.jpg);}
+.category .men_hoodie {background: url(../img/calvinklein_imgaes/pc_men_tile_231227_categori.jpg);}
 .category .men_hoodie  h1 {}
 .category .men_hoodie  h1 a {}
 .category .men_hoodie  p {}
 /* 여성 악세사리 */
-.category .women_accessories {background: url(/img/calvinklein_imgaes/pc_tile2_women_acc_231211\ categori\(1\).jpg);}
+.category .women_accessories {background: url(../img/calvinklein_imgaes/pc_tile2_women_acc_231211\ categori\(1\).jpg);}
 .category .women_accessories h1 {}
 .category .women_accessories h1 a {}
 .category .women_accessories p {}
 /* 남성 악세사리 */
-.category .men_accessories {background: url(/img/calvinklein_imgaes/main_tile4_231102\ categori\ \(1\).jpg);}
+.category .men_accessories {background: url(../img/calvinklein_imgaes/main_tile4_231102\ categori\ \(1\).jpg);}
 .category .men_accessories h1 {}
 .category .men_accessories h1 a {}
 .category .men_accessories p {}
+
+/* 데님 환불 */
+.exchange {background: url(../img/calvinklein_imgaes/pc_gwp_w_banner_230815.jpg);
+background-size: cover;}
+.exchange .product_contents {}
+.exchange .product_contents .contes_sub {    
+    text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
+    display: flex; flex-flow: column nowrap;}
+.exchange .product_contents .contes_sub h1 { color: #fff;  font-size: 2rem;}
+.exchange .product_contents .contes_sub .introduction {
+    color: #fff; font-size: 0.825rem;
+    margin-bottom: 80px; padding-top: 15px;
+}
+.exchange .product_contents .contes_sub .buy {
+    border: 1px solid #fff;  padding: 10px 65px 10px 65px;  
+    display: inline-block;width: max-content; margin-bottom: 40px; color: #fff;
+}
+/* 카테고리 2 */
+.bottom_contents1 {
+    background: url(../img/calvinklein_imgaes/pc_home_tile4_231116.jpg);
+    background-size: cover;}
+.bottom_contents1 .contents_sub {}
+.bottom_contents1 .contents_sub h1 {}
+.bottom_contents1 .contents_sub .best_buy {}
+.bottom_contents1 .contents_sub .best_buy p {}
+.bottom_contents1 .contents_sub .exclusive_buy {}
+.bottom_contents1 .contents_sub .exclusive_buy p {}
+
+.bottom_contents2 {background: url(../img/calvinklein_imgaes/pc_home_tile2_231116.jpg);}
+.bottom_contents2 .contents_sub {}
+.bottom_contents2 .contents_sub h1 {}
+.bottom_contents2 .contents_sub .men_buy {}
+.bottom_contents2 .contents_sub .men_buy p {}
+.bottom_contents2 .contents_sub .women_buy {}
+.bottom_contents2 .contents_sub .women_buy p {}
+
+.bottom_contents3 {background: url(../img/calvinklein_imgaes/pc_main3_tile_231102.jpg);}
+.bottom_contents3 .contents_sub {} 
+.bottom_contents3 .contents_sub h1 {} 
+.bottom_contents3 .contents_sub .men_buy {} 
+.bottom_contents3 .contents_sub .men_buy p{} 
+.bottom_contents3 .contents_sub .women_buy {} 
+.bottom_contents3 .contents_sub .women_buy p{} 
+
+.bottom_contents4 {background: url(../img/calvinklein_imgaes/pc_tile4_women_cku_231211.jpg);}
+.bottom_contents4 .contents_sub {}
+.bottom_contents4 .contents_sub h1 {}
+.bottom_contents4 .contents_sub .men_buy {}
+.bottom_contents4 .contents_sub .men_buy p {}
+.bottom_contents4 .contents_sub .women_buy {}
+.bottom_contents4 .contents_sub .women_buy p{}
+
 

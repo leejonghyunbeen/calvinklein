@@ -18,7 +18,7 @@ header .text_box .wrap .next_freeview .next img {}
 header .text_box .close_icon {} 
 header .text_box .close_icon img {color: #fff;} /* 닫기 */
 header .head_contents {
-    display: flex; background-color: aqua; justify-content: space-between;  padding: 20px;
+    display: flex;  justify-content: space-between;  padding: 20px;
 } /* 상단 검색 및 정보 */
 header .head_contents .logo_gender {display: flex;}  /* 로고랑 젠더 왼쪽 */
 header .head_contents .logo_gender h1 {}  
@@ -45,3 +45,8 @@ header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
 
 
  /* footer */
+footer {margin-top: 20px;}
+footer .first_footer {display: flex; flex-flow: row nowrap;}
+footer .first_footer .contents1 {}
+footer .first_footer .contents1 h1{}
+footer .first_footer .contents1 a{display: block;}
