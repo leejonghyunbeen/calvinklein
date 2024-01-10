@@ -31,7 +31,7 @@ main .holiyday .holiyday_buy .brand_saie {
 }
 .product_contents {display: flex;}
 .product_contents li {}
-.product_contents li .product_main{}
+.product_contents li .product_main{position: relative;}
 .product_contents li .product_main .photo{}
 .product_contents li .product_main .photo img {width: 548px; height: 685px; }
 .product_contents li .product_main .favorite  {}
@@ -86,6 +86,7 @@ main .holiyday .holiyday_buy .brand_saie {
 .Outerwear_freebies .freebies_left .left_contents h1 {font-size: 2rem;}
 .Outerwear_freebies .freebies_left .left_contents p {}
 .Outerwear_freebies .freebies_left .left_contents .buy {
+    margin-top: 200px;
     font-size: 0.825rem;
     border: 1px solid #000;  padding: 10px 30px 10px 30px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
@@ -122,11 +123,11 @@ main .holiyday .holiyday_buy .brand_saie {
 /* 다시 가방 상품 */
 .fashion_product {display: flex;}
 .fashion_product li {}
-.fashion_product li .product_main {}
+.fashion_product li .product_main {position: relative;}
 .fashion_product li .product_main .photo{}
-.fashion_product li .product_main .photo img {}
+.fashion_product li .product_main .photo img {width: 548px; height: 685px;}
 .fashion_product li .product_main .favorite {}
-.fashion_product li .product_main .favorite img {}
+.fashion_product li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 .fashion_product li .product_main .size {}
 .fashion_product li .product_main .size a {}
 .fashion_product li .product_info {}
@@ -134,3 +135,27 @@ main .holiyday .holiyday_buy .brand_saie {
 .fashion_product li .product_info p {}
 .fashion_product li .product_info p em {}
 .fashion_product li .product_info p del {}
+/* 카테고리 */
+.category {display: flex;}
+/* 여성후드티 */
+.category .women_hoodie {
+    background: url(/img/calvinklein_imgaes/pc_home_category_tile_kazuha_231017.jpg);}
+.category .women_hoodie h1 {}
+.category .women_hoodie h1 a {}
+.category .women_hoodie p {}
+/* 남성후드 */
+.category .men_hoodie {background: url(/img/calvinklein_imgaes/pc_men_tile_231227_categori.jpg);}
+.category .men_hoodie  h1 {}
+.category .men_hoodie  h1 a {}
+.category .men_hoodie  p {}
+/* 여성 악세사리 */
+.category .women_accessories {background: url(/img/calvinklein_imgaes/pc_tile2_women_acc_231211\ categori\(1\).jpg);}
+.category .women_accessories h1 {}
+.category .women_accessories h1 a {}
+.category .women_accessories p {}
+/* 남성 악세사리 */
+.category .men_accessories {background: url(/img/calvinklein_imgaes/main_tile4_231102\ categori\ \(1\).jpg);}
+.category .men_accessories h1 {}
+.category .men_accessories h1 a {}
+.category .men_accessories p {}
+
