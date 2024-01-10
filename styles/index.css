@@ -1,7 +1,7 @@
 main {}
 main .holiyday {
     background: url(../img/calvinklein_imgaes/main_home.jpg) center bottom;
-    background-size: cover;
+    background-size: cover; padding-top: 100px  ;
 } /* 여기에 고민시 이미지 */
 main .holiyday .giving {
     padding-top: 90px; text-align: center;
@@ -115,7 +115,7 @@ main .holiyday .holiyday_buy .brand_saie {
 }
 .winter_product .product_contents .contes_sub h1 {color: #fff;  font-size: 2rem;}
 .winter_product .product_contents .contes_sub .introduction{  
-    color: #fff; font-size: 0.825rem;
+    color: #fff; font-size: 0.825rem; text-align: left;
     margin-bottom: 80px; padding-top: 15px;}
 .winter_product .product_contents .contes_sub .men_buy{
     color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
@@ -167,15 +167,17 @@ main .holiyday .holiyday_buy .brand_saie {
 
 /* 데님 환불 */
 .exchange {background: url(../img/calvinklein_imgaes/pc_gwp_w_banner_230815.jpg);
-background-size: cover;}
+background-size: cover; height: 500px;}
 .exchange .product_contents {}
 .exchange .product_contents .contes_sub {    
-    text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
+    text-align: center;
+    padding:200px 0 0 50px; color: #fff;  margin-bottom: 50px;
     display: flex; flex-flow: column nowrap;}
 .exchange .product_contents .contes_sub h1 { color: #fff;  font-size: 2rem;}
 .exchange .product_contents .contes_sub .introduction {
     color: #fff; font-size: 0.825rem;
     margin-bottom: 80px; padding-top: 15px;
+    text-align: left;
 }
 .exchange .product_contents .contes_sub .buy {
     border: 1px solid #fff;  padding: 10px 65px 10px 65px;  

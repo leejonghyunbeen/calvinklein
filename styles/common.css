@@ -1,4 +1,8 @@
-header {}
+header {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed; width: 100%;
+    left: 0; top: 0;
+}
 header .text_box { display: flex;  background-color: #000;} /* 상단 전체 */
 header .text_box .wrap {
     display: flex;  width: 100%; 
@@ -33,8 +37,8 @@ header .head_contents  #search_bar fieldset {width: 360px; height: 36px; border:
 header .head_contents  #search_bar fieldset .skip {display: none;} /* 레전드 스킵 */
 header .head_contents  #search_bar fieldset #search {border: none;
     width: 360px; height: 36px; padding: 10px;background-color: #aaa; opacity: 0.8; } /* 검색바 */
-header .head_contents  #search_bar fieldset #btn {position: absolute; right:20px ;  border: none; background: none; opacity: 0.8; }  /* 이미지 */
-header .head_contents  #search_bar fieldset #btn img {} /* 이미지 */
+header .head_contents  #search_bar fieldset #btn {position: absolute; right:20px;   border: none; background: none; opacity: 0.8; }  /* 이미지 */
+header .head_contents  #search_bar fieldset #btn img {padding-top: 7px;} /* 이미지 */
 header .head_contents  .right {}  /* 오른쪽 */
 header .head_contents  .right a {margin-right: 34px;}  /* 오른쪽  아이콘이미지*/
 header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
@@ -47,6 +51,13 @@ header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
  /* footer */
 footer {margin-top: 20px;}
 footer .first_footer {display: flex; flex-flow: row nowrap;}
-footer .first_footer .contents1 {}
-footer .first_footer .contents1 h1{}
-footer .first_footer .contents1 a{display: block;}
+footer .first_footer > * { 
+    width: 25%; display: flex; flex-flow: column;
+}
+footer .first_footer .contents {background-color: aqua;}
+footer .first_footer .content1  {background-color: lime;}
+footer .first_footer .content2 {background-color: pink;}
+footer .first_footer .content3 {background-color: violet;}
+footer .first_footer .content4 {background-color: navajowhite;}
+footer .first_footer .contents h1{}
+footer .first_footer .contents a{display: block;}
