@@ -1,7 +1,7 @@
 main {}
 main .holiyday {
     background: url(../img/calvinklein_imgaes/main_home.jpg) center bottom;
-    background-size: cover; padding-top: 100px  ;
+    background-size: cover; padding-top: 100px   ;
 } /* 여기에 고민시 이미지 */
 main .holiyday .giving {
     padding-top: 90px; text-align: center;

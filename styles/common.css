@@ -52,12 +52,15 @@ header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
 footer {margin-top: 20px;}
 footer .first_footer {display: flex; flex-flow: row nowrap;}
 footer .first_footer > * { 
-    width: 25%; display: flex; flex-flow: column;
+    width: 20%; display: flex; flex-flow: column;
 }
-footer .first_footer .contents {background-color: aqua;}
-footer .first_footer .content1  {background-color: lime;}
-footer .first_footer .content2 {background-color: pink;}
-footer .first_footer .content3 {background-color: violet;}
-footer .first_footer .content4 {background-color: navajowhite;}
-footer .first_footer .contents h1{}
-footer .first_footer .contents a{display: block;}
+footer .first_footer .contents {
+    background-color: aqua;}
+footer .first_footer  .contents1  {background-color: lime;}
+footer .first_footer .contents2 {background-color: pink;}
+footer .first_footer .contents3 {background-color: violet;}
+footer .first_footer .contents4 {background-color: navajowhite;}
+footer .first_footer .contents h1{padding-bottom: 8px;}
+footer .first_footer .contents a{
+    padding-bottom: 8px;
+    display: block;}
