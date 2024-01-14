@@ -49,14 +49,19 @@ header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
 
 
  /* footer */
-footer {margin-top: 20px;}
-footer .first_footer {display: flex; flex-flow: row nowrap;}
+footer {margin-top: 20px;
+    margin-left: 50px; ; padding: 0 40px 0 0;
+}
+footer .first_footer {
+    display: flex; flex-flow: row nowrap; padding: 25px 0;
+}
 footer .first_footer > * { 
-    width: 20%; display: flex; flex-flow: column;
+    width: 15%; display: flex; flex-flow: column;
 }
 footer .first_footer .contents {
     background-color: aqua;}
-footer .first_footer  .contents1  {background-color: lime;}
+footer .first_footer  .contents1  {
+    background-color: lime;}
 footer .first_footer .contents2 {background-color: pink;}
 footer .first_footer .contents3 {background-color: violet;}
 footer .first_footer .contents4 {background-color: navajowhite;}
@@ -64,3 +69,16 @@ footer .first_footer .contents h1{padding-bottom: 8px;}
 footer .first_footer .contents a{
     padding-bottom: 8px;
     display: block;}
+.footer_last {
+    display: flex; justify-content: space-between;
+     width: 100%;
+}
+.footer_last .text {}
+.footer_last .text address {
+    color: #ccc; font-size: 0.75rem; margin-bottom: 10px;
+}
+.footer_last .text p {color: #ccc; font-size: 0.75rem; margin-bottom: 10px;}
+.footer_last .sns {}
+.footer_last .sns a {margin-right: 9px;}
+.footer_last .sns a i {}
+.footer_last .sns a img {}
