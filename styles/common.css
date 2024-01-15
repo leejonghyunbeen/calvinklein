@@ -71,7 +71,7 @@ footer .first_footer .contents a{
     display: block;}
 .footer_last {
     display: flex; justify-content: space-between;
-     width: 100%;
+    width: 100%;
 }
 .footer_last .text {}
 .footer_last .text address {

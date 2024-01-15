@@ -189,9 +189,9 @@ background-size: cover; height: 500px;}
     flex-flow:row wrap;  margin-bottom: 20px;
 }
 .bottom_contents1 {width:calc(50% - 10px); height: 1000px;
-    background: url(../img/calvinklein_imgaes/pc_home_tile4_231116.jpg);
+    background: url(../img/calvinklein_imgaes/C28_03_QF6021ADK6L_MO-TP-F1.jpg);
     background-size: cover; position: relative; margin-right: 20px; 
-    margin-bottom: 20px;
+    margin-bottom: 20px; background-position: top;
 }
 .bottom_contents1 .contents_sub {
     display: flex; flex-flow: column nowrap;
@@ -235,7 +235,7 @@ background-size: cover; height: 500px;}
 .bottom_contents3 {background: url(../img/calvinklein_imgaes/pc_main3_tile_231102.jpg);
     width:calc(50% - 10px); height: 1000px;
     position: relative;background-size: cover;
-    margin-right: 20px;
+    margin-right: 20px; background-position: center;
 }
 .bottom_contents3 .contents_sub {
     position: absolute; left: 20px; bottom: 0;
@@ -244,20 +244,20 @@ background-size: cover; height: 500px;}
 .bottom_contents3 .contents_sub h1 {color: #fff;  font-size: 2rem;} 
 .bottom_contents3 .contents_sub .men_buy {} 
 .bottom_contents3 .contents_sub .men_buy p{   
-     color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
+    color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
     display: inline-block; width: max-content;
-     margin-bottom: 20px;margin-top: 25px;
+    margin-bottom: 20px;margin-top: 25px;
     } 
 .bottom_contents3 .contents_sub .women_buy {} 
 .bottom_contents3 .contents_sub .women_buy p{ 
-       color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
+    color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
     display: inline-block; width: max-content; margin-bottom: 20px;} 
 
 
 .bottom_contents4 {background: url(../img/calvinklein_imgaes/pc_tile4_women_cku_231211.jpg);
     width:calc(50% - 10px); height: 1000px; 
     background-size: cover;
-    position: relative;
+    position: relative;  background-position: center;
 }
 .bottom_contents4 .contents_sub {
     position: absolute; left: 20px; bottom: 0;
