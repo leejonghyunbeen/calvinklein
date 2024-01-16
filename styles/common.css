@@ -1,7 +1,7 @@
 header {
     background: rgba(0, 0, 0, 0.5);
     position: fixed; width: 100%;
-    left: 0; top: 0;
+    left: 0; top: 0; z-index: 999;
 }
 header .text_box { display: flex;  background-color: #000;} /* 상단 전체 */
 header .text_box .wrap {
