@@ -75,6 +75,12 @@ main .holiyday .holiyday_buy .brand_saie {
 .main1_product li .product_main .favorite img{position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 .main1_product li .product_main .size {}
 .main1_product li .product_main .size a {}
+/* 장바구니안 */
+.basket_background {background: aqua;} /* 여기에 background_black */
+.basket_background .basket_product {width: calc(25%);
+    background: tomato;}/* 컨텐츠 내용 */
+.basket_background .basket_product .prodiuct_top {display: flex;}/* 상단부분 */
+
 /* 사은품 구매 */
 .Outerwear_freebies {
     display: flex; flex-flow: row nowrap; justify-content: space-between; margin-top: 20px;
@@ -82,7 +88,8 @@ main .holiyday .holiyday_buy .brand_saie {
 .Outerwear_freebies .freebies_left {
     margin: 0 auto;
 }
-.Outerwear_freebies .freebies_left .left_contents {display: flex; flex-flow: column nowrap; 
+.Outerwear_freebies .freebies_left .left_contents {
+    display: flex; flex-flow: column nowrap; align-items: center;
     margin-top: 100px;}
 .Outerwear_freebies .freebies_left .left_contents h1 {font-size: 2rem;}
 .Outerwear_freebies .freebies_left .left_contents p {margin-bottom: 100px;margin-top: 40px;}
@@ -141,29 +148,51 @@ main .holiyday .holiyday_buy .brand_saie {
 .fashion_product li .product_info p em {}
 .fashion_product li .product_info p del {}
 /* 카테고리 */
-.category {display: flex
-    ;}
+.category {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; 
+    width:100% ;height: 685px; 
+}
 /* 여성후드티 */
 .category .women_hoodie{
-    background: url(../img/calvinklein_imgaes/pc_home_category_tile_kazuha_231017.jpg);}
+    display: flex; flex-flow: column nowrap;
+    background: url(../img/calvinklein_imgaes/pc_home_category_tile_kazuha_231017.jpg);width: 25%;  background-position: center; background-size: cover; margin-right: 10px;
+}
 .category .women_hoodie h1 {}
-.category .women_hoodie h1 a {}
-.category .women_hoodie p {}
+.category .women_hoodie h1 .content {}
+.category .women_hoodie .buy {}
 /* 남성후드 */
-.category .men_hoodie {background: url(../img/calvinklein_imgaes/pc_men_tile_231227_categori.jpg);}
+.category .men_hoodie {
+    width: 25%; 
+    background: url(../img/calvinklein_imgaes/pc_men_tile_231227_categori.jpg);
+    background-position: center; background-size: cover; margin-right: 10px;
+}
 .category .men_hoodie  h1 {}
-.category .men_hoodie  h1 a {}
-.category .men_hoodie  p {}
+.category .men_hoodie  h1 .content {}
+.category .men_hoodie .buy {}
 /* 여성 악세사리 */
-.category .women_accessories {background: url(../img/calvinklein_imgaes/pc_tile2_women_acc_231211\ categori\(1\).jpg);}
+.category .women_accessories {
+    width: 25%;
+    background: url(../img/calvinklein_imgaes/pc_tile_w_acc_240109.jpg);
+    background-position: center; background-size: cover;margin-right: 10px;
+}
 .category .women_accessories h1 {}
-.category .women_accessories h1 a {}
-.category .women_accessories p {}
+.category .women_accessories h1 .content {}
+.category .women_accessories .buy {}
 /* 남성 악세사리 */
-.category .men_accessories {background: url(../img/calvinklein_imgaes/main_tile4_231102\ categori\ \(1\).jpg);}
-.category .men_accessories h1 {}
-.category .men_accessories h1 a {}
-.category .men_accessories p {}
+.category .men_accessories {
+    width: 25%;
+    background: url(../img/calvinklein_imgaes/main_tile4_231102\ categori\ \(1\).jpg);
+    background-position: center; background-size: cover; position: relative;
+    align-items: center;
+}
+.category .men_accessories .text {
+    text-align: center;
+    position: absolute; bottom: 0; 
+}
+.category .men_accessories .text h1 {}
+.category .men_accessories .text h1 a.content {}
+.category .men_accessories .text .buy {}
 
 /* 데님 환불 */
 .exchange {background: url(../img/calvinklein_imgaes/pc_gwp_w_banner_230815.jpg);
@@ -184,7 +213,7 @@ background-size: cover; height: 500px;}
     display: inline-block;width: max-content; margin-bottom: 40px; color: #fff;
 }
 /* 카테고리 2 */
-.contents_all {background-color: aqua;
+.contents_all {
     display: flex; 
     flex-flow:row wrap;  margin-bottom: 20px;
 }
