@@ -76,28 +76,77 @@ main .main1_product li .product_main .favorite img{position: absolute; right: 15
 main .main1_product li .product_main .size {}
 main .main1_product li .product_main .size a {}
 /* 장바구니안 */
-main .basket_background {background: yellow;} /* 여기에 background_black */
-main .basket_background .basket_product {width: calc(25%);
+main .basket_background 
+{   width: 100%;
+    height: 100vh;
+    background: yellow;
+} /* 여기에 background_black */
+main .basket_background .basket_product {
+    float: right;
+    height: 100vh;
+    width: calc(25%);
     background: tomato;}/* 컨텐츠 내용 */
 main .basket_background .basket_product .prodiuct_top {
     margin: 0 auto;
     background-color: #fff;
-    width: calc(80%);
+    width: calc(90%);
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 main .basket_background .basket_product .product_mid {
     background-color: aqua;
     display: flex;
-    width: calc(80%); margin: 0 auto; 
+    width: calc(90%); margin: 0 auto; 
 } /* 사진쪽 */
 main .basket_background .basket_product .product_mid .left {} 
 main .basket_background .basket_product .product_mid .left a {} 
-main .basket_background .basket_product .product_mid .left a img {width: 200px;} 
+main .basket_background .basket_product .product_mid .left a img {
+    width: 150px; margin-right: 30px;
+} 
 /* 텍스트부분  */
 main .basket_background .basket_product .product_mid .right {} 
 main .basket_background .basket_product .product_mid .right .right_top {} 
-/* 상단부분 */
-
+main .basket_background .basket_product .product_mid .right .right_top .title {display: flex;} 
+main .basket_background .basket_product .product_mid .right .right_top .title a {} 
+main .basket_background .basket_product .product_mid .right .right_top .title a h1 {line-height: 25px;} 
+main .basket_background .basket_product .product_mid .right .right_top .title a img {} 
+main .basket_background .basket_product .product_mid .right .right_top .color {
+    font-size: 0.825rem; 
+} 
+main .basket_background .basket_product .product_mid .right .right_top .size {font-size:0.825rem;} 
+main .basket_background .basket_product .product_mid .right .right_top .border {
+    margin-top: 8px;
+    display: inline-block; padding: 2px;
+    border: 1px solid #000;} 
+main .basket_background .basket_product .product_mid .right .right_bottom {display: flex;}
+main .basket_background .basket_product .product_mid .right .right_bottom .bottom_left {}
+main .basket_background .basket_product .product_mid .right .right_bottom .bottom_left .price {}
+main .basket_background .basket_product .product_mid .right .right_bottom .bottom_left .price_total {}
+/* 하단 */
+main .basket_background .basket_product .product_bottom {
+}
+main .basket_background .basket_product .product_bottom .bottom_first {
+    width: calc(90%);
+    margin: 0 auto;
+    display: flex; justify-content: space-between;
+    margin-bottom: 30px;
+}
+main .basket_background .basket_product .product_bottom .bottom_first p {}
+main .basket_background .basket_product .product_bottom .bottom_first p span {
+    color: #bdbdbd; padding-left: 10px;
+}
+main .basket_background .basket_product .product_bottom .bottom_first p em {
+    font-weight: bold;
+}
+main .basket_background .basket_product .product_bottom .bottom_last {
+    width: calc(90%);
+    margin: 0 auto; text-align: center;
+}
+main .basket_background .basket_product .product_bottom .bottom_last .basket_view {
+    display: block; padding: 10px; background: #000; color: #fff; margin-bottom: 20px;
+}
+main .basket_background .basket_product .product_bottom .bottom_last .buy {
+    display: block; text-decoration: underline;
+}
 /* 사은품 구매 */
 main .Outerwear_freebies {
     display: flex; flex-flow: row nowrap; justify-content: space-between; margin-top: 20px;
