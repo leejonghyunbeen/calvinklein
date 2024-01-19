@@ -3,7 +3,9 @@ header {
     position: fixed; width: 100%;
     left: 0; top: 0; z-index: 999;
 }
-header .text_box { display: flex;  background-color: #000;} /* 상단 전체 */
+header .text_box {
+    display: flex;  background-color: #000; padding: 3px;
+    } /* 상단 전체 */
 header .text_box .wrap {
     display: flex;  width: 100%; 
 } /* 텍스트와 < >아이콘*/
@@ -41,6 +43,11 @@ header .head_contents  #search_bar fieldset #btn {position: absolute; right:20px
 header .head_contents  #search_bar fieldset #btn img {padding-top: 7px;} /* 이미지 */
 header .head_contents  .right {}  /* 오른쪽 */
 header .head_contents  .right a {margin-right: 34px;}  /* 오른쪽  아이콘이미지*/
+header .header_categori {
+    padding-left: 35px; margin-bottom: 30px;
+}
+header .header_categori a {color: #fff; margin-right: 15px;
+}
 header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
 
 
