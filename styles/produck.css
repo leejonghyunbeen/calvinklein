@@ -122,34 +122,35 @@ main .sub_categori a {
 main .main_product {display: flex;}
 main .main_product .product_left { 
     display: flex; flex-flow: row wrap; margin-left: 35px; padding-top: 10px; 
+    width: 1200px;
 }
-main .main_product .product_left p {margin-right: 10px;}
-main .main_product .product_left .product_1{
-    
-}main .main_product .product_left .product_1 img{
-    width: 600px; height: 755px; 
+main .main_product .product_left p {
+    margin-right: 10px; width: calc(50% - 10px); margin-bottom: 10px;
 }
-main .main_product .product_left .product_2 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_3 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_4 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_5 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_6 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_7 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_8 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_9 img {width: 600px; height: 755px;}
-main .main_product .product_left .product_10 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_11 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_12 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_13 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_14 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_15 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_16 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_17 img{width: 600px; height: 755px;}
-main .main_product .product_left .product_18 img{width: 600px; height: 755px;}
+main .main_product .product_left img {width: 100%;}
+main .main_product .product_left .product_1 img{}
+main .main_product .product_left .product_2 img {}
+main .main_product .product_left .product_3 img {}
+main .main_product .product_left .product_4 img {}
+main .main_product .product_left .product_5 img {}
+main .main_product .product_left .product_6 img {}
+main .main_product .product_left .product_7 img {}
+main .main_product .product_left .product_8 img {}
+main .main_product .product_left .product_9 img {}
+main .main_product .product_left .product_10 img{}
+main .main_product .product_left .product_11 img{}
+main .main_product .product_left .product_12 img{}
+main .main_product .product_left .product_13 img{}
+main .main_product .product_left .product_14 img{}
+main .main_product .product_left .product_15 img{}
+main .main_product .product_left .product_16 img{}
+main .main_product .product_left .product_17 img{}
+main .main_product .product_left .product_18 img{}
+
 
 /* 오른쪽 */
 main .main_product .product_right {
-    width: 250%; margin-right: 35px;
+    width: calc(100% - 1200px); padding: 0 35px;
 } 
 main .main_product .product_right .brand{
     font-size: 0.875rem; padding-bottom: 7px;
@@ -184,6 +185,41 @@ main .main_product .product_right .photo {
 main .main_product .product_right .size {}
 main .main_product .product_right .size .top {display: flex; justify-content: space-between;}
 main .main_product .product_right .size .top p {}
+main .main_product .product_right .size .bottom {}
+main .main_product .product_right .size .bottom a {
+    border: 1px solid #000;  padding: 10px 30px 10px 30px;
+    display: inline-block; width: 108px; margin-bottom: 20px;    
+    text-align: center;
+}
+main .main_product .product_right .size .bottom a {}
+main .main_product .product_right .size .bottom a img{width: 20px;}
+main .main_product .product_right .size .size_last {
+    font-size: 0.875rem; color: #808080; margin-bottom: 35px;
+}
+main .main_product .product_right .basket {
+    background-color: aqua;
+    width: 100%;
+}
+main .main_product .product_right .basket .basket_add{ 
+    background: #000;
+    border: 1px solid #000; 
+    padding: 11px 150px 8px;
+    color: #fff;
+    font-size: 0.875rem;
+}
+main .main_product .product_right .basket .heart {float: right;}
+main .main_product .product_right .basket .heart img {}
+main .main_product .product_right .basket .basket_add del{
+    color: #808080; font-size: 0.625rem;
+    text-decoration: line-through;
+}
+main .main_product .product_right .basket .basket_add em{
+    color: #fff;  font-weight: 800;
+}
+main .main_product .product_right .line {margin-top: 50px;
+    background-color: #eeee; height: 1px;
+    width: 100%;
+}
  /* footer */
 footer {margin-top: 20px;
     margin-left: 50px; ; padding: 0 40px 0 0;
