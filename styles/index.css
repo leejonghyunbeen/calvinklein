@@ -1,7 +1,7 @@
 main {}
 main .holiyday {
-    background: url(../img/calvinklein_imgaes/main_home.jpg) center bottom;
-    background-size: cover; padding-top: 100px   ; 
+    background: url(../img/calvinklein_imgaes/pc_home_main_240122.jpg);
+    background-size: cover; padding-top: 250px   ; 
 } /* 여기에 고민시 이미지 */
 main .holiyday .giving {
     padding-top: 90px; text-align: center;
@@ -279,7 +279,7 @@ main .category .men_hoodie .text .buy {
 /* 여성 악세사리 */
 main .category .women_accessories {
     width: 25%;
-    background: url(../img/calvinklein_imgaes/pc_tile_w_acc_240109.jpg);
+    background: url(../img/calvinklein_imgaes/pc_w_tile4_240122.jpg);
     background-position: center; background-size: cover;margin-right: 10px;
     position: relative;
 }
@@ -317,8 +317,8 @@ main .category .men_accessories .text .buy {
 }
 
 /* 데님 환불 */
-main .exchange {background: url(../img/calvinklein_imgaes/pc_gwp_w_banner_230815.jpg);
-background-size: cover; height: 500px;
+main .exchange {background: url(../img/calvinklein_imgaes/pc_home_main2_240122.jpg);
+background-size: cover; height: 500px; background-position: center ;
 margin-bottom: 10px;
 }
 main .exchange .product_contents {}

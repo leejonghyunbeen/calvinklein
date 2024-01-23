@@ -112,8 +112,9 @@ main .nav_background .nav_contents_background .nav_contents .content_main .nav_r
 
 /* 상단 카테고리 */
 main {
-    width: 100%;
+    width: 100%; 
 }
+main .all_contents{}
 main .sub_categori{margin-left: 35px;}
 main .sub_categori a { 
     font-size: 0.813rem; color: #aaa;
@@ -124,29 +125,65 @@ main .main_product .product_left {
 }
 main .main_product .product_left p {margin-right: 10px;}
 main .main_product .product_left .product_1{
-    background-image: url(../product_img/C27_01_J2223541A4_MO-TP-F1.jpg);
-    width: 600px; height: 755px; background-size: cover;
+    
+}main .main_product .product_left .product_1 img{
+    width: 600px; height: 755px; 
 }
-main .main_product .product_left .product_2{
-    background-image: url(../product_img/C27_01_J2223541A4_MO-TP-F2.jpg);
-    width: 600px; height: 755px; background-size: cover;
+main .main_product .product_left .product_2 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_3 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_4 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_5 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_6 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_7 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_8 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_9 img {width: 600px; height: 755px;}
+main .main_product .product_left .product_10 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_11 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_12 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_13 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_14 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_15 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_16 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_17 img{width: 600px; height: 755px;}
+main .main_product .product_left .product_18 img{width: 600px; height: 755px;}
+
+/* 오른쪽 */
+main .main_product .product_right {
+    width: 250%; margin-right: 35px;
+} 
+main .main_product .product_right .brand{
+    font-size: 0.875rem; padding-bottom: 7px;
+} 
+main .main_product .product_right h1{
+    font-size: 1.5rem; margin-bottom: 10px; 
+} 
+main .main_product .product_right .price {
+    margin: 7px 7px 7px 0;
+} 
+main .main_product .product_right .price del {
+    font-size: 0.813rem; text-decoration: line-through;
+} 
+main .main_product .product_right .price span {font-size: 1rem;} 
+main .main_product .product_right .price em {
+    color: #d73d3d; font-size: 0.875rem;
+} 
+main .main_product .product_right p #Special  {
+    font-size: 0.875rem; color: #d73d3d;
 }
-main .main_product .product_left .product_3{}
-main .main_product .product_left .product_4{}
-main .main_product .product_left .product_5{}
-main .main_product .product_left .product_6{}
-main .main_product .product_left .product_7{}
-main .main_product .product_left .product_8{}
-main .main_product .product_left .product_9{}
-main .main_product .product_left .product_10{}
-main .main_product .product_left .product_11{}
-main .main_product .product_left .product_12{}
-main .main_product .product_left .product_13{}
-main .main_product .product_left .product_14{}
-main .main_product .product_left .product_15{}
-main .main_product .product_left .product_16{}
-main .main_product .product_left .product_17{}
-main .main_product .product_left .product_18{}
+main .main_product .product_right .color {
+    color: #808080; font-size: 0.875rem;
+}
+main .main_product .product_right .color em {
+    font-size: 0.875rem; font-weight: 800;
+}
+main .main_product .product_right .photo {
+    width: 65px; height: 65px; 
+    background-image: url(../product_img/C27_01_J2223541A4_FL-TP-F1.jpg); background-size: cover;
+    border: 1px solid #000; border-radius: 50%;
+}
+main .main_product .product_right .size {}
+main .main_product .product_right .size .top {display: flex; justify-content: space-between;}
+main .main_product .product_right .size .top p {}
  /* footer */
 footer {margin-top: 20px;
     margin-left: 50px; ; padding: 0 40px 0 0;

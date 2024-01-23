@@ -56,7 +56,8 @@ main .nav_background{
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
-    z-index: 999; left: 0; top: 0;
+    z-index: 999; left: 0; top: 0; 
+    display: none;
 }
 
 main .nav_background .nav_contents_background {/* 컨텐츠 백그라운드 */
