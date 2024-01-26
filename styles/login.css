@@ -1,0 +1,37 @@
+/* #login_wrap main */
+#login_wrap main {
+    max-width: 460px; margin: 0 auto;
+}
+#login_wrap main #loginFrm {
+    /* border: 1px solid #ccc; border-radius:5px ; */
+}
+#login_wrap main #loginFrm fieldset {}
+/* 탭 제목 */
+#login_wrap main #loginFrm fieldset .login_title {
+    display: flex;
+}
+#login_wrap main #loginFrm fieldset .login_title h2 {
+    width: calc(100% / 2 );  display: flex;
+    text-align: center;  background: #ffff;
+    border-radius: 0px; height: 60px; 
+    justify-content: center; align-items: center;
+    border-bottom-left-radius:0 ; border-bottom-right-radius: 0;
+    border-radius: 0; position: relative;
+}
+
+#login_wrap main #loginFrm fieldset .login_title h2:last-child {
+    border-top-right-radius: 5px;
+}
+#login_wrap main #loginFrm fieldset .login_title h2 a {
+    width: 100%; line-height: 60px; 
+}
+#login_wrap main #loginFrm fieldset .login_container .id_login .id_pw_input{
+    display: flex ; flex-flow: column nowrap;
+}
+#login_wrap main #loginFrm fieldset .login_container .id_login .id_pw_input
+{}
+#login_wrap main #loginFrm fieldset .login_container .login_c {}
+#login_wrap main #loginFrm fieldset .login_container .login_c .id_pw_state {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#login_wrap main #loginFrm fieldset .login_container .login_c .id_pw_state {}

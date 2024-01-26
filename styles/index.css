@@ -29,21 +29,23 @@ main .holiyday .holiyday_buy .brand_saie {
     color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
-main .product_contents {display: flex;}
-main .product_contents li {}
-main .product_contents li .product_main{position: relative;}
-main .product_contents li .product_main .photo{}
-main .product_contents li .product_main .photo img {width: 548px; height: 685px; padding-right: 10px;}
-main .product_contents li .product_main .favorite  {}
-main .product_contents li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
-main .product_contents li .product_main .size {}
-main .product_contents li .product_main .size a {}
-main .product_contents li .product_main .product_info {}
-main .product_contents li .product_info a {font-size: 0.875rem;}   
-main .product_contents li .product_info p {font-size: 0.875rem;}
-main .product_contents li .product_info p em {}
-main .product_contents li .product_info p del {}
-main .product_contents li .product_info a {}
+main .product_content {
+    display: flex; margin-left: 35px;
+}
+main .product_content li {}
+main .product_content li .product_main{position: relative;}
+main .product_content li .product_main .photo{}
+main .product_content li .product_main .photo img {width: 548px; height: 685px; padding-right: 10px;}
+main .product_content li .product_main .favorite  {}
+main .product_content li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
+main .product_content li .product_main .size {}
+main .product_content li .product_main .size a {}
+main .product_content li .product_main .product_info {}
+main .product_content li .product_info a {font-size: 0.875rem;}   
+main .product_content li .product_info p {font-size: 0.875rem;}
+main .product_content li .product_info p em {}
+main .product_content li .product_info p del {}
+main .product_content li .product_info a {}
 
 /* 일단메인부터 */
 main .new_product {}/* 배경에 여자베너 */
@@ -66,7 +68,10 @@ main .new_product .product_contents {
     display: inline-block;width: max-content; margin-bottom: 40px; color: #fff;
 
 }
-main .main1_product {display: flex;}
+main .main1_product {
+    display: flex;margin-left: 35px;
+}
+
 main .main1_product li {}
 main .main1_product li .product_main {position: relative;}
 main .main1_product li .product_main .photo {}
@@ -221,7 +226,8 @@ main .winter_product .product_contents .contes_sub .women_buy{
     display: inline-block; width: max-content; margin-bottom: 40px;
 }
 /* 다시 가방 상품 */
-main .fashion_product {display: flex;}
+main .fashion_product {display: flex;
+    margin-left: 35px;}
 main .fashion_product li {}
 main .fashion_product li .product_main {position: relative;}
 main .fashion_product li .product_main .photo{}
