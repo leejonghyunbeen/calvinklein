@@ -119,39 +119,107 @@
     </header>
     <main>
         <div id="login_wrap">
-            <header><h1><a href="#" title="NAVER"><!-- NAVER --></a></h1></header>
-            <main>
-                <form action="#" method="post" id="loginFrm">
-                    <fieldset>
-                        <legend class="skip">로그인 회원가입</legend>
-                        <!-- 제목탭 구성 -->
-                        <div class="login_title">
-                            <h2 ><a href="#"><span>로그인</span></a></h2>
-                            <h2><a href="#"><span>회원가입</span></a></h2>
+            <h1><a href="#" title="NAVER"><!-- NAVER --></a></h1>
+            <form action="#" method="post" id="loginFrm">
+                <fieldset>
+                    <legend class="skip">로그인 회원가입</legend>
+                    <!-- 제목탭 구성 -->
+                    <div class="login_title">
+                        <h2 ><a href="#"><span>로그인</span></a></h2>
+                        <h2><a href="#"><span>회원가입</span></a></h2>
+                    </div>
+                    <!-- 내용탭 구성 -->
+                    <div class="login_container">
+                        <!-- 내용탭 구성 1. ID 로그인 -->
+                        <div class="login_c id_login">
+                            <div class="id_pw_input">
+                                <span><input type="text" placeholder="이메일" id="userId"></span>
+                                <span><input type="password" placeholder="비밀번호" id="userpW"></span>
+                            </div>
+                            <div class="id_pw_state">
+                                <div class="login_state">
+                                    <input type="checkbox" name="login_state_y" id="login_state_y">
+                                    <label for="login_state_y">기억하기</label>
+                                </div>
+                                <div class="pw_miss">
+                                    <a href="#">비밀번호를 잊으셧나요?</a>
+                                </div>
+                            </div>
+                            <div class="error_message"><!-- JS --></div>
+                            <div class="login_btn_wrap">
+                                <button type="button" id="loginBtn">로그인</button>
+                            </div>
+                            <div class="naver_login">
+                                <button type="button" id="loginBtn">네이버 아이디로 로그인</button>
+                            </div>
+                            <div class="kakao_login">
+                                <button type="button" id="loginBtn">카카오 로그인</button>
+                            </div>
+                            <div class="face_join">
+                                <button type="button" id="joinBtn">페이스북으로 가입하기</button>
+                            </div>
+                            <div class="join">
+                                <button type="button" id="joinBtn"> 계정 만들기</button>
+                            </div>
                         </div>
-                        <!-- 내용탭 구성 -->
-                        <div class="login_container">
-                            <!-- 내용탭 구성 1. ID 로그인 -->
-                            <div class="login_c id_login">
-                                <div class="id_pw_input">
-                                    <span><input type="text" placeholder="이메일" id="userId"></span>
-                                    <span><input type="password" placeholder="비밀번호" id="userpW"></span>
+                        <!-- 회원가입 -->
+                        <div class="join">
+                            <div class="btn">
+                                <div class="naver_login">
+                                    <button type="button" id="loginBtn">네이버 아이디로 로그인</button>
                                 </div>
-                                <div class="id_pw_state">
-                                    <div class="login_state">
-                                        <input type="checkbox" name="login_state_y" id="login_state_y">
-                                        <label for="login_state_y">기억하기</label>
-                                    </div>
-                                    <div class="pw_miss">
-                                        <a href="#">비밀번호를 잊으셧나요?</a>
-                                    </div>
+                                <div class="kakao_login">
+                                    <button type="button" id="loginBtn">카카오 로그인</button>
                                 </div>
-                                <div class="error_message"><!-- JS --></div>
-                                <div class="login_btn_wrap">
-                                    <button type="button" id="loginBtn">로그인</button>
+                                <div class="face_join">
+                                    <button type="button" id="joinBtn">페이스북으로 가입하기</button>
+                                </div>
+                            </div>
+                            <div class="contents">
+                                <input type="text" name="name" id="name" placeholder="이름*">
+                                <input type="email" name="mail" id="mail" placeholder="이메일*">
+                                <dd>이 번호로 인증번호가 전송됩니다.</dd>
+                                <div class="phone">
+                                    <select name="ko" id="ko">
+                                        <option value="ko">+82</option>
+                                        <option value="ko2">+82</option>
+                                    </select>
+                                    <input type="number" id="number" placeholder="휴대폰 번호*">
+                                </div>
+                                <input type="number" id="pw" placeholder="비밀번호*">
+                                <input type="number" id="pwRe" placeholder="비밀번호 확인*">
+                                <p class="birthday">생년월일 (선택사항)</p>
+                                <p>생일 정보 입력 시에만, 생일 달에 쓰실 수 있는 생일 쿠폰이 발급됩니다.</p>
+                                <div class="birthday_btn">
+                                    <select name="year" id="year">
+                                        <option value="year">2024</option>
+                                        <option value="year">2023</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
+                        <!-- 맴버십 내용 -->
+                        <div class="benefit">
+                            <div class="contents">
+                                <h1>My Calvins 멤버십에 가입하면 주어지는 혜택들!<h1>
+                                <div class="contents_sub">
+                                    <p>신규 가입<br>웰컴 쿠폰</p>
+                                    <p>생일 쿠폰</p>
+                                    <p>회원전용<br>뉴스레터</p>
+                                    <p>VIP전용<br>상시 할인</p>
+                                </div>
+                                <div class="bottom">
+                                    <p id="membership">
+                                        <a href="#">My Calvins멤버십 혜택 자세히 보기</a>
+                                    </p>
+                                    <p class="contents_bottom">My Calvins의 <a href="#">세부 멤버십 이용약관</a>을 확인하세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </main>
 </body>
 </html>
