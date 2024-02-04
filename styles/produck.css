@@ -76,7 +76,9 @@ main .main_product .product_left {
 main .main_product .product_left p {
     margin-right: 10px; width: calc(50% - 10px); margin-bottom: 10px;
 }
-main .main_product .product_left img {width: 100%;}
+main .main_product .product_left img {
+    width: 100%; 
+}
 main .main_product .product_left .product_1 img{}
 main .main_product .product_left .product_2 img {}
 main .main_product .product_left .product_3 img {}
@@ -139,11 +141,17 @@ main .main_product .product_right .size {
 main .main_product .product_right .size .top {display: flex; justify-content: space-between; align-items: center;
 }
 main .main_product .product_right .size .top p {}
-main .main_product .product_right .size .bottom {}
+main .main_product .product_right .size .bottom {
+    display: flex;
+}
 main .main_product .product_right .size .bottom a {
     border: 1px solid #000;  padding: 10px 30px 10px 30px;
     display: inline-block; width: 108px; margin-bottom: 20px;    
-    text-align: center;
+    text-align: center; 
+}
+main .main_product .product_right .size .bottom a:nth-child(2),
+main .main_product .product_right .size .bottom a:nth-child(3){
+    display: flex; justify-content: space-between;
 }
 main .main_product .product_right .size .bottom a {}
 main .main_product .product_right .size .bottom a img{width: 20px;}
@@ -214,7 +222,7 @@ main .main_product .product_right .shopping dl dd:nth-child(17)
 
 /* 상품 */
 main .product_contents {display: flex;
-    margin-left: 35px;
+    margin-left: 35px; overflow: auto
 }
 main .product_contents li {}
 main .product_contents li .product_main{position: relative;}

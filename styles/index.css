@@ -30,7 +30,8 @@ main .holiyday .holiyday_buy .brand_saie {
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
 main .product_content {
-    display: flex; margin-left: 35px;
+    display: flex; margin-left: 35px; 
+    overflow: auto
 }
 main .product_content li {}
 main .product_content li .product_main{position: relative;}
@@ -55,7 +56,7 @@ main .new_product .product_contents {
 }
 .new_product .product_contents .contes_sub{
     text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
-    display: flex; flex-flow: column nowrap;
+    display: flex; flex-flow: column nowrap; text-align: left;
 }
 .new_product .product_contents .contes_sub h1 {
     color: #fff;  font-size: 2rem;
@@ -155,7 +156,7 @@ main .basket_background .basket_product .product_bottom .bottom_first {
     margin-bottom: 30px;
     margin-top: 30PX;
     padding-bottom: 30PX;
-    border-bottom: 1PX solid #CCC;
+    border-bottom: 1PX solid #CCC; 
 }
 main .basket_background .basket_product .product_bottom .bottom_first p {}
 main .basket_background .basket_product .product_bottom .bottom_first p span {
@@ -197,7 +198,9 @@ main .Outerwear_freebies .freebies_left .left_contents .join {
     border: 1px solid #000;  padding: 15px 40px 15px 40px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
-.main1_product
+.main1_product{ 
+    overflow: auto
+}
 .main1_product li {}
 .main1_product li .product_info {}
 .main1_product li .product_info a {}
@@ -211,7 +214,7 @@ main .winter_product .product_contents {
     text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
     }
 main .winter_product .product_contents .contes_sub {
-    display: flex;  flex-flow: column nowrap;
+    display: flex;  flex-flow: column nowrap; text-align: left;
 }
 main .winter_product .product_contents .contes_sub h1 {color: #fff;  font-size: 2rem;}
 main .winter_product .product_contents .contes_sub .introduction{  
@@ -226,8 +229,9 @@ main .winter_product .product_contents .contes_sub .women_buy{
     display: inline-block; width: max-content; margin-bottom: 40px;
 }
 /* 다시 가방 상품 */
-main .fashion_product {display: flex;
-    margin-left: 35px;}
+main .fashion_product {display: flex; 
+    margin-left: 35px; overflow: auto
+}
 main .fashion_product li {}
 main .fashion_product li .product_main {position: relative;}
 main .fashion_product li .product_main .photo{}
@@ -329,7 +333,7 @@ margin-bottom: 10px;
 }
 main .exchange .product_contents {}
 main .exchange .product_contents .contes_sub {    
-    text-align: center;
+    text-align: left;
     padding:200px 0 0 50px; color: #fff;  margin-bottom: 50px;
     display: flex; flex-flow: column nowrap;}
 main .exchange .product_contents .contes_sub h1 { color: #fff;  font-size: 2rem;}
