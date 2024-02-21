@@ -1,0 +1,30 @@
+main {}
+main section {
+    max-width: 100%;
+    display: flex; flex-flow: column;
+     align-items: center;
+}
+main section .contents_header{
+    padding: 22px 0 20px;
+}
+main section .contents_header h1 {
+    font-size: 1.5rem;
+}
+main section .contents_main  {
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 173px;
+}
+main section .contents_main p {
+    text-align: center;
+    font-size: 0.875rem; 
+    margin: 27px 0 40px ;
+}
+main section .contents_main img {
+    width: 20px;
+}
+main section .contents_main a {
+    padding: 11px 32px 8px; color: #fff; background: #000;
+    border: 1.6px solid #000; font-size: 0.875rem; width: 244px;
+    text-align: center;
+}
