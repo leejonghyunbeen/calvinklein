@@ -1,0 +1,71 @@
+main {}
+main section {}
+main section .all_contents {
+    text-align: center;
+    margin: 0 0 13px;
+    padding: 34px 0 5px;
+}
+main section .all_contents h1 {
+    font-size: 2rem; font-weight: 400;
+}
+main section .sub_category {
+    padding: 10px 9.6px 0;
+}
+main section .sub_category a {
+    font-size: 0.813rem;
+}
+main section .sub_category a:nth-of-type(1){
+    color: #a5a5a5; 
+}
+main section .sub_category a:nth-of-type(2){
+    font-weight: 400;
+}
+main section  .category {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 24px 0;
+}
+main section  .category .contents_box {
+    margin: 0 9.6px 0 ; width: 20%;
+    display: flex; flex-flow: column nowrap;
+}
+main section  .category .contents_box a:nth-of-type(1){
+    margin-bottom: 15px;
+}
+main section  .category .contents_box a:nth-of-type(2){
+    margin-bottom: 10px; font-weight: 400 ;
+}
+main section  .category .contents_box a:nth-of-type(3){
+    text-decoration: underline;
+}
+main section  .category .contents_box img{
+    width: 100%;
+}
+
+main section .porduct_box {}
+main section .porduct_box a {
+    width: 50%;
+    display: inline-block;
+    padding: 0 0 15px;
+    margin: 11px 0 40px;
+}
+main section .porduct_box a h1 {
+    margin-bottom: 6px; font-size: 0.813rem;
+    padding-left: 4px;
+}
+main section .porduct_box a p:nth-of-type(1) {
+    margin-bottom: 2px; font-size: 0.75rem; font-weight: 600;
+    padding-left: 4px;
+}
+main section .porduct_box a p:nth-of-type(2){
+    font-size: 0.813rem; padding-left: 4px; 
+}
+main section .porduct_box .photo {
+    overflow: hidden; 
+}
+main section .porduct_box a img {
+    width: 100%;
+    padding: 0 4px;
+}
+main section .porduct_box p{
+    /* display: inline-block */
+}

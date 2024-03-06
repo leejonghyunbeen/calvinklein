@@ -133,7 +133,9 @@ footer .first_footer .contents a{
     display: flex; justify-content: space-between;
     width: 100%;
 }
-.footer_last .text {}
+.footer_last .text {
+    padding: 0 10px 20px;
+}
 .footer_last .text address {
     color: #ccc; font-size: 0.75rem; margin-bottom: 10px;
 }

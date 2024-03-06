@@ -1,0 +1,36 @@
+main {
+    padding: 0 40px;
+}
+main section {
+    max-width: 100%;
+    display: flex; flex-flow: column;
+    align-items: center;
+    padding: 11px 0 0;
+    margin-bottom: 124.8px;
+}
+main section .shop_more{
+    width: 100%; display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center; margin-bottom: 32px; margin-top: 14.4px;
+}
+main section .shop_more a {
+    font-size: 0.813rem;
+    text-decoration: underline;
+}
+main section .contents_main  {
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+    padding: 57px 60px 48px;
+}
+main section .contents_main h2 {
+    margin: 34px 0 5px; font-size: 1.125rem;
+}
+main section .contents_main p {
+    text-align: center;
+    font-size: 0.875rem; 
+    margin: 27px 0 10px ;
+}
+main section .contents_main a {
+    padding: 11px 32px 11px; color: #fff; background: #000;
+    border: 1.6px solid #000; font-size: 0.875rem; width: 244px;
+    text-align: center; margin: 30px 0 0;
+}

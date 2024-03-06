@@ -132,7 +132,7 @@ main .main_product .product_right .color em {
 }
 main .main_product .product_right .photo {
     width: 65px; height: 65px; 
-    background-image: url(../product_img/C27_01_J2223541A4_FL-TP-F1.jpg); background-size: cover;
+    background-image: url(../img/product_img/C27_01_J2223541A4_FL-TP-F1.jpg); background-size: cover;
     border: 1px solid #000; border-radius: 50%;
 }
 main .main_product .product_right .size {
