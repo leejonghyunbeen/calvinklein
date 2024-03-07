@@ -70,3 +70,33 @@ main section .porduct_box a img {
 main section .porduct_box p{
     font-size: 0.813rem ; padding-left: 4px;
 }
+main section .show_more {
+    display: flex; flex-flow: column;
+    align-items: center;
+}
+main section .show_more .text {}
+main section .show_more .text p {
+    font-size: 0.75rem; font-weight: 500;
+    margin-bottom: 5px;
+}
+main section .show_more .bar {
+    content: ''; width: 224px; height: 4px;
+    display: inline-block; background: #a5a5a5;
+    position: relative; margin-bottom: 16px;
+}
+main section .show_more .bar .bar_sub {
+    content: ''; width: 10px; height: 4px;
+    display: inline-block; background: #000;
+    position: absolute;
+}
+main section .show_more button{
+
+    width: 300px;
+    padding: 11px 32px; border: 1px solid #000;
+    margin-bottom: 64px
+}
+main section .show_more button:hover{
+    background: #000; 
+    color: #fff;
+    transition: 0.3s;
+}

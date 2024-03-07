@@ -23,7 +23,7 @@ fetch('./script/product_dat.json')
             this.children[0].children[0].src = `./img/product_all/thumbnail_${indexFormatted}_sub.jpg`
         })
         listItem.addEventListener('mouseout',function(){
-            this.children[0].children[0].src = `./img/product_all/thumbnail_${indexFormatted}.jpg`
+            this.children[0].children[0].src = `./img/product_all/thumbnail_${indexFormatted}.jpg`      
         })
     })
 })
