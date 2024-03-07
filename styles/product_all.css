@@ -58,6 +58,7 @@ main section .porduct_box a p:nth-of-type(1) {
 }
 main section .porduct_box a p:nth-of-type(2){
     font-size: 0.813rem; padding-left: 4px; 
+    font-weight: 700; margin-bottom: 6px;
 }
 main section .porduct_box .photo {
     overflow: hidden; 
@@ -67,5 +68,5 @@ main section .porduct_box a img {
     padding: 0 4px;
 }
 main section .porduct_box p{
-    /* display: inline-block */
+    font-size: 0.813rem ; padding-left: 4px;
 }

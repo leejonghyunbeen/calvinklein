@@ -1,0 +1,202 @@
+main {}
+main section {
+    padding: 65px 0 20px;
+}
+main section .wrap {
+    display: flex;
+    padding: 0 124px;
+}
+
+main section .wrap .nav{
+    display: flex; flex-flow: column nowrap;
+}
+main section .wrap .nav .category{
+    display: flex; flex-flow: column nowrap;
+    margin-bottom: 38.6px;
+}
+main section .wrap .nav .category a {
+    line-height: 30px; font-weight: 400;
+    font-size: 0.875rem;
+}
+
+/* 공통 폰트*/
+main section .wrap .nav .operation_imfo h3,
+main section .wrap .nav .operation_imfo p,
+main section .wrap .nav .operation_imfo a {
+    font-size: 0.813rem; font-weight: 400;
+    letter-spacing: 1px;
+}
+
+main section .wrap .nav .operation_imfo h3{
+    font-weight: 400; 
+}
+
+main section .wrap .nav .operation_imfo p{
+    line-height: 20px; margin-bottom: 20px;
+}
+
+main section .wrap .nav .operation_imfo{
+    background: #f4f4f4;     border-top: 4px solid #000;
+    padding: 20px 15px 1px; margin-bottom: 40px;
+}
+main section .wrap .nav .operation_imfo .customer_service {
+    padding-bottom: 15px; border-bottom: 1px solid #ccc;
+}
+main section .wrap .nav .operation_imfo .customer_service h2 {
+    font-size: 1.125rem; padding-bottom: 12px; font-weight: 400;
+}
+main section .wrap .nav .operation_imfo .customer_service a{
+    text-decoration: underline; font-size: 0.813rem; margin-top: 15px;
+    
+}
+main section .wrap .nav .operation_imfo .tell{
+    padding: 10px 0; border-bottom: 1px solid #ccc;
+}
+main section .wrap .nav .operation_imfo .tell a{
+    text-decoration: underline;
+}
+main section .wrap .nav .operation_imfo .info_text {
+    margin: 10px 0;
+}
+main section .wrap .nav .operation_imfo .info_text .time h3 {
+    margin-bottom: 13px;
+}
+main section .wrap .nav .operation_imfo .info_text div {
+    margin-bottom: 13px;
+}
+
+/* 내용 1 */
+main section .wrap .contents {}
+main section .wrap .contents .contact {
+    /* display: none; */
+    padding: 35px 40px;}
+main section .wrap .contents .contact .content_wrap {}
+main section .wrap .contents .contact .content_wrap h1 {
+    font-size: 2rem; font-weight: 400; margin-bottom: 30px;
+}
+
+main section .wrap .contents .contact .content_wrap  p,
+main section .wrap .contents .contact .content_wrap  span,
+main section .wrap .contents .contact .content_wrap a ,
+main section .wrap .contents .contact .content_wrap h2
+{
+    font-size: 0.875rem; font-weight: 400;
+}
+main section .wrap .contents .contact .content_wrap em {
+    font-weight: 600; font-size: 0.875rem;
+}
+
+main section .wrap .contents .contact .content_wrap .text  {}
+main section .wrap .contents .contact .content_wrap .text p {
+    line-height: 20px;
+}
+main section .wrap .contents .contact .content_wrap h2 {
+    padding: 20px 0;
+}
+main section .wrap .contents .contact .content_wrap span {
+    
+}
+main section .wrap .contents .contact .content_wrap .info p{
+    margin-bottom: 9px;
+}
+main section .wrap .contents .contact .content_wrap .info p:nth-of-type(6){
+    margin-bottom: 30px;
+}
+main section .wrap .contents .contact .content_wrap .info span a{
+    text-decoration: underline;
+}
+/* 내용2 */
+main section .wrap .contents .faq {
+    /* display: none; */
+    padding: 35px 40px;
+}
+main section .wrap .contents .faq h1 {
+    font-size: 2rem; font-weight: 400; margin-bottom: 30px;
+}
+main section .wrap .contents .faq .text_box {}
+main section .wrap .contents .faq .text_box  .product h2{
+    font-size: 1.125rem; font-weight: 400; display: inline; 
+    border-bottom: 1px solid #000; padding: 15px 0;
+    margin-bottom: 10px;
+}
+main section .wrap .contents .faq .text_box .product .text_wrap {
+    margin-top: 16px; 
+    padding: 20px 0;
+    border-top: 1px solid #f4f4f4;
+}
+main section .wrap .contents .faq .text_box .product .text_wrap dl {
+    margin-bottom: 20px;
+}
+main section .wrap .contents .faq .text_box .product .text_wrap dl dt {
+    font-weight: 600; font-size: 0.875rem;
+}
+main section .wrap .contents .faq .text_box .product .text_wrap dl dd {
+    font-weight: 400; font-size: 0.875rem; line-height: 25px;   
+}
+main section .wrap .contents .faq .text_box .product .text_wrap dl .point {
+    
+}
+main section .wrap .contents .faq .text_box .product .text_wrap dl .point::before{
+    content: ''; display: inline-block; width: 4px; height: 4px;
+    background: #000; margin-bottom: 3px; margin-left: 15px ; margin-right: 10px;
+}
+/* 내용 3 */
+main section .wrap .contents .size {
+    padding:  0 40px;
+}
+main section .wrap .contents .size .content_wrap h1 {
+    font-size: 2rem; font-weight: 400; margin-bottom: 30px;
+}
+main section .wrap .contents .size .content_wrap  .text_box{}
+main section .wrap .contents .size .content_wrap  .text_box h2{
+    font-size: 1.125rem; font-weight: 400; display: inline; 
+    border-bottom: 1px solid #000; padding: 15px 0;
+    margin-bottom: 10px;
+}
+main section .wrap .contents .size .content_wrap  .text_box .gide
+{
+    margin-top: 16px; 
+    padding: 20px 0;
+    border-top: 1px solid #f4f4f4;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo {}
+main section .wrap .contents .size .content_wrap .text_box .photo h3{
+    margin-bottom: 43px;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .item img{
+    width: 130px; height: 305px;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .item { display: flex; 
+    margin-bottom: 103px;
+}
+
+main section .wrap .contents .size .content_wrap .text_box .photo .item ul {
+    margin-left: 40px;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .item ul li {
+    margin-bottom: 24px;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .item ul li p:nth-of-type(2){
+    margin-left: 43px; font-size: 0.813rem;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .item ul li p:nth-of-type(1){
+    margin-bottom: 12px; font-size: 0.871rem;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .item ul li p em{
+    background: #000; color: #fff; padding: 0 7px; margin-right: 20px;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo h3{}
+main section .wrap .contents .size .content_wrap .text_box .photo .size_box {
+    background: #f4f4f4; display: flex; flex-flow: row;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .size_box .wrapper{
+    display: flex;  flex-flow: column;
+}
+main section .wrap .contents .size .content_wrap .text_box .photo .size_box .wrapper .button_sub{
+    display: flex; flex-flow: column;
+}
+
+
+.active {
+    color: #a5a5a5;
+}
