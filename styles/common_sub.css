@@ -2,6 +2,9 @@ header {
     width: 100%;
     left: 0; top: 0; 
     border-bottom: 2px solid #f9f9f9;
+    position: sticky ; top: 0;
+    background: #fff;
+    z-index: 999;
 }
 header .text_box {
     display: flex;  background-color: #000; padding: 3px;
@@ -60,7 +63,7 @@ header .header_categori a {color: #000; margin-right: 15px; font-size: 0.813rem;
 header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
 
 footer {margin-top: 20px;
-    margin-left: 50px; ; padding: 0 40px 0 0;
+    ; padding: 0 40px  0;
 }
 footer .first_footer {
     display: flex; flex-flow: row nowrap; padding: 25px 0;

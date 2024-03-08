@@ -100,12 +100,27 @@ main section .show_more button:hover{
     color: #fff;
     transition: 0.3s;
 }
-main section .filter{display: flex; align-items: center; justify-content: space-between;}
+main section .filter{
+    /* position: fixed; top: 40px; */
+    display: flex; align-items: center; justify-content: space-between; padding:  0 6px;}
 main section .filter .product_width {
     display: flex; align-items: center;
 }
 main section .filter .product_width .text {
     padding: 10px 0; margin-right: 18px;
 }
-main section .filter img {width: 30ox; height: 20px;
-margin-top: 5px;}
+main section .filter .product_width .text p  {
+    font-size: 0.813rem; font-weight: 400;
+}
+main section .filter  img {width: 30px; height: 20px;
+    }
+
+
+main section .filter .main_filter button {
+    color: #fff;
+    display: flex; align-items: center;
+    padding: 11px 30px; background: #000;
+}
+main section .filter  .main_filter img {margin-top: 5px; margin-left: 10px;}
+
+

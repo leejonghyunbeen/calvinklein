@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CalvinCKlein | 상품</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common_sub.css">
     <link rel="stylesheet" href="./styles/produck.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -118,6 +124,9 @@
             <a href="#">셀럽</a>
         </div>
     </header>
+    <div class="popup">
+        <p class="popup_contents"></p>
+    </div>
     <main>
         <div class="all_contents">
             <div class="sub_categori">
@@ -159,13 +168,13 @@
                     <div class="photo"></div><!-- 사진 -->
                     <div class="size">
                         <div class="top">
-                            <p>사이즈:</p>
+                            <p class="size_text">사이즈:</p>
                             <p>사이즈 안내</p>
                         </div>
                         <div class="bottom">
                             <a href="#">XS</a> <!-- 보더 -->
-                            <a href="#"><span>S</span> <img src="./img/icon/mail.png" alt="#"></a> <!-- 보더 -->
-                            <a href="#"><span>M</span> <img src="./img/icon/mail.png" alt="#"></a> <!-- 보더 -->
+                            <a href="#">S</a> <!-- 보더 -->
+                            <a href="#">M</a> <!-- 보더 -->
                         </div>
                         <P class="size_last">사이즈 선택하여 재고 확인</P>
                     </div>
@@ -173,33 +182,35 @@
                         <a href="#" class="basket_add">
                             장바구니에 추가 <del>249,000</del><em>174,300 원</em> 
                         </a>
-                        <a href="#" class="heart"><img src="./img/icon/favorite.png" alt=""></a>
+                        <a href="#" class="heart"><i class="fa-regular fa-heart"></i></a>
                     </div>
                     <div class="line"></div>
                     <div class="information">
                         <div class="btn">
-                            <a href="#">
+                            <a class="imfo_btn" href="#">
                                 <span>상세정보</span>
                                 <img src="./img/icon/check_indeterminate_small.png" alt="#"><!-- 더하기 이미지 -->
                             </a>
                         </div>
-                        <p>스톤워시 가공을 한 미드블루 쉐이드의 데님 트러커 자켓입니다. 하이-로우 효과로 빈티지한무드 연출과 가슴 양쪽에 플랩 포켓이 디테일입니다. 왼쪽 포켓 위에 모노그램 로고 패치가 포인트 입니다</p>
-                        <ul>
-                            <li>•제조국: 중국</li>
-                            <li>•제조년월: 2023년 3월</li>
-                            <li>•혼용률: 100% 면</li>
-                            <li>•컬러: 미드블루</li>
-                            <li>•사이즈: XS,S,M</li>
-                            <li>•모델 착용 사이즈: S</li>
-                            <li>세탁방법: •되도록 드라이 크리닝 하십시오. (데님, 언더웨어 상품은 물세탁시 중성세제를 사용, 표백성분 세제 사용금지)</li>
-                            <li>•손세탁시 뒤집어 단독 세탁 하십시오. (데님 상품은 연한 색상과 함께 세탁할 경우 이염 될수 있음),</li>
-                            <li>•세탁시 탈색 될수 있으며 착장시 가방류나 밝은 색상의 의류에 이염 될 수 있으니 주의 하십시오</li>
-                            <li>스타일 번호: J222354-1A4</li>
-                        </ul>
+                        <div class="imfo_box">
+                            <p>스톤워시 가공을 한 미드블루 쉐이드의 데님 트러커 자켓입니다. 하이-로우 효과로 빈티지한무드 연출과 가슴 양쪽에 플랩 포켓이 디테일입니다. 왼쪽 포켓 위에 모노그램 로고 패치가 포인트 입니다</p>
+                            <ul class="imfo_contents">
+                                <li>•제조국: 중국</li>
+                                <li>•제조년월: 2023년 3월</li>
+                                <li>•혼용률: 100% 면</li>
+                                <li>•컬러: 미드블루</li>
+                                <li>•사이즈: XS,S,M</li>
+                                <li>•모델 착용 사이즈: S</li>
+                                <li>세탁방법: •되도록 드라이 크리닝 하십시오. (데님, 언더웨어 상품은 물세탁시 중성세제를 사용, 표백성분 세제 사용금지)</li>
+                                <li>•손세탁시 뒤집어 단독 세탁 하십시오. (데님 상품은 연한 색상과 함께 세탁할 경우 이염 될수 있음),</li>
+                                <li>•세탁시 탈색 될수 있으며 착장시 가방류나 밝은 색상의 의류에 이염 될 수 있으니 주의 하십시오</li>
+                                <li>스타일 번호: J222354-1A4</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="shopping">
                         <div class="btn">
-                            <a href="#">
+                            <a class="second_btn" href="#">
                                 <span>배송 + 반품</span>
                                 <img src="./img/icon/add.png" alt="#"><!-- 더하기 이미지 -->
                             </a>
@@ -231,115 +242,131 @@
                 </div>
             </div>  
         </div>
-        <ul class="product_contents">
-            <li> <!-- 첫번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/product_img/C28_02_YW00823YBR_MO-AS-F1.jpg" alt="여자모델"></a>
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                </div>
-                <div class="product_info">
-                    <a href="#">여성 말모 스니커즈 YW00823</a>
-                    <p><em>139,000</em>원</p>
-                    <a href="#" class="color_choice">더 많은 색상 선택 가능</a>
-                </div>
-            </li>
-            <li> <!-- 두번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/product_img/C28_02_YW0141001W_MO-AS-F1.jpg" alt="여자모델"></a><!-- 여자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 말모 스니커즈</a>
-                    <p><em>139,000</em>원</p>
-                </div>
-            </li>
-            <li > <!-- 세번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/product_img/C28_02_YW014100GM_MO-AS-F1.jpg" alt="여자모델"></a><!-- 여자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 말모 메타 스니커즈</a>
-                    <p><em>139,000</em>원</p>
-                </div>
-            </li>
-            <li> <!-- 네번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/product_img/pc_w_tile2_240122.jpg" alt="여자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">25</a>
-                        <a href="#">26</a>
-                        <a href="#">27</a>
-                        <a href="#">28</a>
-                        <a href="#">29</a>
+        <div class="swiper-container product_box">
+            <ul class=" swiper-wrapper product_contents">
+                <li class="swiper-slide"> <!-- 첫번째 상품 -->
+                    <div class="contents_all">
+                        <div class="product_main">
+                            <a href="#" class="photo"><img src="./img/product_img/C28_02_YW00823YBR_MO-AS-F1.jpg" alt="여자모델"></a>
+                            <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        </div>
+                        <div class="product_info">
+                            <a href="#">여성 말모 스니커즈 YW00823</a>
+                            <p><em>139,000</em>원</p>
+                            <a href="#" class="color_choice">더 많은 색상 선택 가능</a>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">여성 하이라이즈 스트레이트핏 미드블루 데님</a>
-                    <p><em>269,000 원</em>원</del></p>
-                    <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
-                </div>
-            </li>
-            <li > <!-- 다섯번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="img/calvinklein_imgaes/C27_01_J400360P01_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">XS</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                </li>
+                <li class="swiper-slide"> <!-- 두번째 상품 -->
+                    <div class="contents_all ">
+                        <div class="product_main">
+                            <a href="#" class="photo"><img src="./img/product_img/C28_02_YW0141001W_MO-AS-F1.jpg" alt="여자모델"></a><!-- 여자베너 -->
+                            <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        </div>
+                        <div class="product_info">
+                            <a href="#">남녀공용 말모 스니커즈</a>
+                            <p><em>139,000</em>원</p>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
-                    <p><em>94,170</em>원<del>129,000원</del></p>
-                    <P><span>2pcs 이상 구매시 10% 할인</span></P>
-                    <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
-                </div>
-            </li>
-            <li> <!-- 여섯번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J325246BEH_MO-TP-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                </li>
+                <li class="swiper-slide"> <!-- 세번째 상품 -->
+                    <div class="contents_all">
+                        <div class="product_main">
+                            <a href="#" class="photo"><img src="./img/product_img/C28_02_YW014100GM_MO-AS-F1.jpg" alt="여자모델"></a><!-- 여자베너 -->
+                            <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        </div>
+                        <div class="product_info">
+                            <a href="#">남녀공용 말모 메타 스니커즈</a>
+                            <p><em>139,000</em>원</p>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
-                    <p><em>94,170</em>원<del>129,000원</del></p>
-                    <P><span>스웻셔츠 온라인 특가</span></P>
-                </div>
-            </li>
-            <li> <!-- 일곱번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J400348YAF_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">XS</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                </li>
+                <li class="swiper-slide"> <!-- 네번째 상품 -->
+                    <div class="contents_all">
+                        <div class="product_main">
+                            <a href="#" class="photo"><img src="./img/product_img/pc_w_tile2_240122.jpg" alt="여자모델"></a><!-- 남자베너 -->
+                            <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                            <div class="size">
+                                <a href="#">사이즈 선택</a>
+                                <a href="#">25</a>
+                                <a href="#">26</a>
+                                <a href="#">27</a>
+                                <a href="#">28</a>
+                                <a href="#">29</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">여성 하이라이즈 스트레이트핏 미드블루 데님</a>
+                            <p><em>269,000 원</em>원</del></p>
+                            <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 베이직 로고 긴팔 티셔츠</a>
-                    <p><em>47,450</em>원<del>65,000원</del></p>
-                    <P><span>2pcs 이상 구매시 10% 할인</span></P>
-                </div>
-            </li>
-        </ul> 
+                </li>
+                <li class="swiper-slide"> <!-- 다섯번째 상품 -->
+                    <div class="contents_all ">
+                        <div class="product_main">
+                            <a href="#" class="photo"><img src="img/calvinklein_imgaes/C27_01_J400360P01_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                            <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                            <div class="size">
+                                <a href="#">사이즈 선택</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
+                            <p><em>94,170</em>원<del>129,000원</del></p>
+                            <P><span>2pcs 이상 구매시 10% 할인</span></P>
+                            <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide"> <!-- 여섯번째 상품 -->
+                    <div class="contents_all">
+                        <div class="product_main">
+                            <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J325246BEH_MO-TP-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                            <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                            <div class="size">
+                                <a href="#">사이즈 선택</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
+                            <p><em>94,170</em>원<del>129,000원</del></p>
+                            <P><span>스웻셔츠 온라인 특가</span></P>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide"> <!-- 일곱번째 상품 -->
+                    <div class="contents_all">
+                        <div class="product_main">
+                            <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J400348YAF_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                            <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                            <div class="size">
+                                <a href="#">사이즈 선택</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <a href="#">남녀공용 베이직 로고 긴팔 티셔츠</a>
+                            <p><em>47,450</em>원<del>65,000원</del></p>
+                            <P><span>2pcs 이상 구매시 10% 할인</span></P>
+                        </div>
+                    </div>
+                </li>
+            </ul> 
+        </div>
     </main>
     <footer>
         <div class="first_footer"> <!-- 하단메뉴 -->
@@ -402,5 +429,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script/common.js"></script>
+    <script src="./script/product.js"></script>
 </body>
 </html>

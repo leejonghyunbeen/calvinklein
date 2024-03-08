@@ -111,8 +111,7 @@ main .nav_background .nav_contents_background .nav_contents .content_main .nav_r
 }
 main .nav_background .nav_contents_background .nav_contents .content_main .nav_right a:nth-child(2) {margin-left: 20px;}
  /* footer */
-footer {margin-top: 20px;
-    margin-left: 50px; ; padding: 0 40px 0 0;
+footer {margin-top: 20px; padding: 0 40px 0 0;
 }
 footer .first_footer {
     display: flex; flex-flow: row nowrap; padding: 25px 0;
