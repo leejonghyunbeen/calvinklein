@@ -43,7 +43,7 @@ main section  .category .contents_box img{
 
 main section .porduct_box {}
 main section .porduct_box a {
-    width: 50%;
+    width: 25%;
     display: inline-block;
     padding: 0 0 15px;
     margin: 11px 0 40px;
@@ -100,3 +100,12 @@ main section .show_more button:hover{
     color: #fff;
     transition: 0.3s;
 }
+main section .filter{display: flex; align-items: center; justify-content: space-between;}
+main section .filter .product_width {
+    display: flex; align-items: center;
+}
+main section .filter .product_width .text {
+    padding: 10px 0; margin-right: 18px;
+}
+main section .filter img {width: 30ox; height: 20px;
+margin-top: 5px;}
