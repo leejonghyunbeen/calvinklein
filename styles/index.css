@@ -25,13 +25,21 @@ main .holiyday .holiyday_buy .holiyday_colation {
     color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
     display: inline-block; width: max-content; margin-bottom: 20px;
 }
+main .holiyday .holiyday_buy .holiyday_colation:hover{
+    background: #fff; color: #000  ; transition: 0.4s;
+}
 main .holiyday .holiyday_buy .brand_saie {
     color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
+main .holiyday .holiyday_buy .brand_saie:hover{
+    background: #fff; color: #000  ; transition: 0.4s;
+}
+
+
+
 main .product_content {
     display: flex; margin-left: 35px; 
-    overflow: auto
 }
 main .product_content li {}
 main .product_content li .product_main{position: relative;}
@@ -65,9 +73,13 @@ main .new_product .product_contents {
     color: #fff; font-size: 0.825rem;
     margin-bottom: 80px; padding-top: 15px;
 }
-.new_product .product_contents .contes_sub .new_buy {border: 1px solid #fff;  padding: 10px 65px 10px 65px;  
+.new_product .product_contents .contes_sub .new_buy {
+    border: 1px solid #fff;  padding: 10px 65px 10px 65px;  
     display: inline-block;width: max-content; margin-bottom: 40px; color: #fff;
-
+    
+}
+.new_product .product_contents .contes_sub .new_buy:hover {
+    background: #fff; color: #000  ; transition: 0.4s;
 }
 main .main1_product {
     display: flex;margin-left: 35px;
@@ -192,14 +204,20 @@ main .Outerwear_freebies .freebies_left .left_contents .buy {
     border: 1px solid #000;  padding: 15px 40px 15px 40px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
+main .Outerwear_freebies .freebies_left .left_contents .buy:hover{
+    background: #000; color: #fff  ; transition: 0.4s;  
+}
 
 main .Outerwear_freebies .freebies_left .left_contents .join {
     font-size: 0.825rem;
     border: 1px solid #000;  padding: 15px 40px 15px 40px;  
     display: inline-block;width: max-content; margin-bottom: 40px;
 }
+main .Outerwear_freebies .freebies_left .left_contents .join:hover{
+    background: #000; color: #fff  ; transition: 0.4s;  
+}
 .main1_product{ 
-    overflow: auto
+    
 }
 .main1_product li {}
 .main1_product li .product_info {}
@@ -224,13 +242,19 @@ main .winter_product .product_contents .contes_sub .men_buy{
     color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
     display: inline-block; width: max-content; margin-bottom: 20px;
 }
+main .winter_product .product_contents .contes_sub .men_buy:hover{
+    background: #fff; color: #000  ; transition: 0.4s;
+}
 main .winter_product .product_contents .contes_sub .women_buy{
     color: #fff; border: 1px solid #fff;  padding: 10px 30px 10px 30px;
     display: inline-block; width: max-content; margin-bottom: 40px;
 }
+main .winter_product .product_contents .contes_sub .women_buy:hover{
+    background: #fff; color: #000  ; transition: 0.4s;
+}
 /* 다시 가방 상품 */
 main .fashion_product {display: flex; 
-    margin-left: 35px; overflow: auto
+    margin-left: 35px; 
 }
 main .fashion_product li {}
 main .fashion_product li .product_main {position: relative;}
@@ -346,6 +370,9 @@ main .exchange .product_contents .contes_sub .buy {
     border: 1px solid #fff;  padding: 10px 65px 10px 65px;  
     display: inline-block;width: max-content; margin-bottom: 40px; color: #fff;
 }
+main .exchange .product_contents .contes_sub .buy:hover{
+    background: #fff; color: #000  ; transition: 0.4s;
+}
 /* 카테고리 2 */
 main .contents_all {
     display: flex; 
@@ -360,6 +387,7 @@ main .bottom_contents1 .contents_sub {
     display: flex; flex-flow: column nowrap;
     position: absolute ; left: 20px; bottom: 0;
 }
+
 main .bottom_contents1 .contents_sub h1 {color: #000;  font-size: 2rem;}
 main .bottom_contents1 .contents_sub .best_buy {}
 main .bottom_contents1 .contents_sub .best_buy p { 

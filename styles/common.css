@@ -8,13 +8,14 @@ header .text_box {
     } /* 상단 전체 */
 header .text_box .wrap {
     display: flex;  width: 100%; 
+    text-align: center;
 } /* 텍스트와 < >아이콘*/
 header .text_box .wrap .a_text {margin: 0 auto;}
 header .text_box .wrap .a_text a {color: #fff;}
-header .text_box .wrap .a_text a:nth-child(2) {color: #fff;display: none;}
-header .text_box .wrap .a_text a:nth-child(3) {color: #fff;display: none;}
-header .text_box .wrap .a_text a:nth-child(4) {color: #fff;display: none;}
-header .text_box .wrap .a_text a:nth-child(5) {color: #fff;display: none;}
+header .text_box .wrap .a_text a:nth-child(2) {color: #fff;}
+header .text_box .wrap .a_text a:nth-child(3) {color: #fff;}
+header .text_box .wrap .a_text a:nth-child(4) {color: #fff;}
+header .text_box .wrap .a_text a:nth-child(5) {color: #fff;}
 header .text_box .wrap .a_text a span {color: #fff; text-decoration: underline;}
 header .text_box .wrap .next_freeview {display: flex; }
 header .text_box .wrap .next_freeview .prev {position: absolute; left: 100px;} /* 이전이미지 */
@@ -48,7 +49,6 @@ header .header_categori {
 }
 header .header_categori a {color: #fff; margin-right: 15px;
 }
-header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
 
 /* 네비게이션 */
 main .nav_background{

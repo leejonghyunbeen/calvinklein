@@ -7,18 +7,24 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
         <div class="text_box"><!-- 상단 전체틀 -->
-            <div class="wrap"> <!-- 텍스트와 <> 아이콘 -->
-                <div class="a_text">
-                    <a href="#">Holiday is about Giving <span>구매하기</span></a>
-                    <a href="#">특별한 홀리데이 컬렉션을 만나보세요 <span>구매하기</span></a>
-                    <a href="#">Special Offer 브랜드 세일 <span>구매하기</span></a>
-                    <a href="#">멤버십 회원한정 겨울 아우터 구매시 사은품 증정<span>구매하기</span></a>
-                    <a href="#">청바지 무료 교환/환불 혜택받기 <span>구매하기</span></a>
+            <div class="swiper-container wrap"> <!-- 텍스트와 <> 아이콘 -->
+                <div class="swiper-wrapper a_text">
+                    <a class="swiper-slide" href="#">Holiday is about Giving <span>구매하기</span></a>
+                    <a class="swiper-slide" href="#">특별한 홀리데이 컬렉션을 만나보세요 <span>구매하기</span></a>
+                    <a class="swiper-slide" href="#">Special Offer 브랜드 세일 <span>구매하기</span></a>
+                    <a class="swiper-slide" href="#">멤버십 회원한정 겨울 아우터 구매시 사은품 증정<span>구매하기</span></a>
+                    <a class="swiper-slide" href="#">청바지 무료 교환/환불 혜택받기 <span>구매하기</span></a>
                 </div>
                 <div class="next_freeview"><!-- < > 이미지 -->
                     <a href="#" class="prev"><img src="./img/icon/before_icon.png" alt="이전"></a>
@@ -44,68 +50,9 @@
             </form>
             <div class="right"><!-- 오른쪽 위시리스트 맵 등 -->
                 <a href="#"><img src="./img/icon/map_icon.png" alt="매장찾기"></a>
-                <a href="#"><img src="./img/icon/mypage.png" alt="마이페이지"></a>
+                <a href="./login.html   "><img src="./img/icon/mypage.png" alt="마이페이지"></a>
                 <a href="./wishlist.html"><img src="./img/icon/haert_icon.png" alt="관심리스트"></a>
                 <a href="#"><img src="./img/icon/bag_icon.png" alt="장바구니"></a>
-            </div>
-            <div class="mobile_header">
-                <div class="haeder_top">
-                    <a href="#"><img src="./img/icon/drag_handle.png" alt="메뉴바"></a>
-                    <div class="bg"><!-- 전체 메뉴 -->
-                        <div class="bg_main"> <!--  검은색 배경 -->
-                            <a href="#"><img src="./img/icon/close_icon.png" alt="닫기"></a><!-- 닫기버튼 -->
-                            <div class="gender">
-                                <a href="#" class="men">
-                                    <span>men</span>
-                                    <span><a href="#"><img src="./img/icon/add.png" alt="더보기"></a></span><!-- 더보기 +버튼 -->
-                                    <div class="m_nav">
-                                        <div class="men">
-                                            <a href="#">하이라이트</a>
-                                            <a href="#">의류</a>
-                                            <a href="#">언더웨이</a>
-                                            <a href="#">악세사리</a>
-                                            <a href="#">슈즈</a>
-                                            <a href="#">스포츠</a>
-                                            <a href="#">셀럽</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="#" class="join">
-                                <span><img src="./img/icon/mypage.png" alt="마이페이지 아이콘">로그인/회원가입</span><!-- 마이페이지 아이콘 -->
-                                <span><img src="./img/icon/next_icon.png" alt="넘어가기"></span><!-- >아이콘 -->
-                            </a>
-                            <div class="store_help">
-                                <a href="#"><img src="./img/icon/map_icon.png" alt="매장찾기">매장찾기</a><!-- 매장찾기 -->
-                                <a href="#"><img src="./img/icon/help.png" alt="need help">Need Help</a>
-                            </div>
-                            <a href="#" class="bottom_contents1">
-                                <h1>Holiday Collction With Calvin Klein</h1>
-                                <p>CK의 특별한 홀리데이 컬렉션을 만나보세요</p>
-                            </a>
-                            <a href="#" class="bottom_contents2">
-                                <h1>Upgrade your denim game with Calvin</h1>
-                                <p>데님 상품 한정 무료 교환/환불 혜택</p>
-                            </a>
-                            <a href="#" class="bottom_contents3">
-                                <h1>최종 결제 시 선물 상자 포함 (3,000원)</h1>
-                                <p>체크박스를 선택해주세요</p>
-                            </a>
-                        </div>
-                    </div>
-                    <h1><a href="#"><img src="./img/calvinklein_imgaes/full-logo-white.svg" alt="캘빈클라인"></a></h1><!-- 로고 -->
-                    <a href="#"><img src="./img/icon/haert_icon.png" alt="관심리스트"></a>
-                    <a href="#"><img src="./img/icon/bag_icon.png" alt="장바구니"></a>
-                </div>
-                <div class="header_bottom">                    
-                    <form action="#" method="get" id="search_bar"><!-- 검색 -->
-                        <fieldset>
-                            <legend class="skip">검색바</legend>
-                            <input type="search" name="search" id="search" placeholder="&quot;드로즈를 검색해 보세요&quot;"><!-- 검색바랑 이미지 -->
-                            <button type="submit" id=""><img src="./img/icon/search_icon.png" alt="검색"></button> 
-                        </fieldset>
-                    </form>
-                </div>
             </div>
         </div>
         <div class="header_categori">
@@ -175,140 +122,142 @@
                 </div>
             </div>
         </div>
-        <ul class="product_content">
-            <li> <!-- 첫번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J325246BEH_MO-TP-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+        <div class=" product_allbox">
+            <ul class="product_content ">
+                <li class=""> <!-- 첫번째 상품 -->
+                    <div class="product_main">
+                        <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J325246BEH_MO-TP-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                        <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        <div class="size">
+                            <a href="#">사이즈 선택</a>
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남성 CK 블랙 마이크로 싱글 로우라이즈 드로즈</a>
-                    <p><em>63,200</em>원<del>79,000원</del></p>
-                    <a href="#" class="color_choice">더 많은 색상 선택 가능</a>
-                </div>
-            </li>
-            <li> <!-- 두번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="img/calvinklein_imgaes/mo_main_home1_231212.jpg" alt="여자모델"></a><!-- 여자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">34A</a>
-                        <a href="#">34B</a>
-                        <a href="#">34C</a>
-                        <a href="#">34D</a>
-                        <a href="#">36A</a>
-                        <a href="#">36B</a>
-                        <a href="#">36C</a>
-                        <a href="#">36D</a>
+                    <div class="product_info">
+                        <a href="#">남성 CK 블랙 마이크로 싱글 로우라이즈 드로즈</a>
+                        <p><em>63,200</em>원<del>79,000원</del></p>
+                        <a href="#" class="color_choice">더 많은 색상 선택 가능</a>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">여성 퓨쳐 쉬프트 마이크로 AF푸쉬업 브라</a>
-                    <p><em>87,200</em>원<del>109,000원</del></p>
-                    <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
-                </div>
-            </li>
-            <li > <!-- 세번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="img/calvinklein_imgaes/C27_03_QF6357ADXAT_MO-BT-F1.jpg" alt="여자모델"></a><!-- 여자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
+                </li>
+                <li class="" > <!-- 두번째 상품 -->
+                    <div class="product_main">
+                        <a href="#" class="photo"><img src="img/calvinklein_imgaes/mo_main_home1_231212.jpg" alt="여자모델"></a><!-- 여자베너 -->
+                        <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        <div class="size">
+                            <a href="#">사이즈 선택</a>
+                            <a href="#">34A</a>
+                            <a href="#">34B</a>
+                            <a href="#">34C</a>
+                            <a href="#">34D</a>
+                            <a href="#">36A</a>
+                            <a href="#">36B</a>
+                            <a href="#">36C</a>
+                            <a href="#">36D</a>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">여성 인비저블 테일러드 AF힙스터</a>
-                    <p><em>36,000</em>원<del>50,000원</del></p>
-                    <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
-                </div>
-            </li>
-            <li> <!-- 네번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="img/calvinklein_imgaes/C25_03_NB3312UB1_MO-BT-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                    <div class="product_info">
+                        <a href="#">여성 퓨쳐 쉬프트 마이크로 AF푸쉬업 브라</a>
+                        <p><em>87,200</em>원<del>109,000원</del></p>
+                        <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남성 엠보스드 아이콘 마이크로 로우 라이즈 드로즈</a>
-                    <p><em>36,000</em>원<del>50,000원</del></p>
-                    <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
-                </div>
-            </li>
-            <li > <!-- 다섯번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="img/calvinklein_imgaes/C27_01_J400360P01_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">XS</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                </li>
+                <li class="" > <!-- 세번째 상품 -->
+                    <div class="product_main">
+                        <a href="#" class="photo"><img src="img/calvinklein_imgaes/C27_03_QF6357ADXAT_MO-BT-F1.jpg" alt="여자모델"></a><!-- 여자베너 -->
+                        <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        <div class="size">
+                            <a href="#">사이즈 선택</a>
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
-                    <p><em>94,170</em>원<del>129,000원</del></p>
-                    <P><span>2pcs 이상 구매시 10% 할인</span></P>
-                    <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
-                </div>
-            </li>
-            <li> <!-- 여섯번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J325246BEH_MO-TP-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                    <div class="product_info">
+                        <a href="#">여성 인비저블 테일러드 AF힙스터</a>
+                        <p><em>36,000</em>원<del>50,000원</del></p>
+                        <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
-                    <p><em>94,170</em>원<del>129,000원</del></p>
-                    <P><span>스웻셔츠 온라인 특가</span></P>
-                </div>
-            </li>
-            <li> <!-- 일곱번째 상품 -->
-                <div class="product_main">
-                    <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J400348YAF_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
-                    <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
-                    <div class="size">
-                        <a href="#">사이즈 선택</a>
-                        <a href="#">XS</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                </li>
+                <li class=""> <!-- 네번째 상품 -->
+                    <div class="product_main">
+                        <a href="#" class="photo"><img src="img/calvinklein_imgaes/C25_03_NB3312UB1_MO-BT-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                        <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        <div class="size">
+                            <a href="#">사이즈 선택</a>
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                        </div>
                     </div>
-                </div>
-                <div class="product_info">
-                    <a href="#">남녀공용 베이직 로고 긴팔 티셔츠</a>
-                    <p><em>47,450</em>원<del>65,000원</del></p>
-                    <P><span>2pcs 이상 구매시 10% 할인</span></P>
-                </div>
-            </li>
-        </ul> 
+                    <div class="product_info">
+                        <a href="#">남성 엠보스드 아이콘 마이크로 로우 라이즈 드로즈</a>
+                        <p><em>36,000</em>원<del>50,000원</del></p>
+                        <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
+                    </div>
+                </li>
+                <li class=""> <!-- 다섯번째 상품 -->
+                    <div class="product_main">
+                        <a href="#" class="photo"><img src="img/calvinklein_imgaes/C27_01_J400360P01_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                        <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        <div class="size">
+                            <a href="#">사이즈 선택</a>
+                            <a href="#">XS</a>
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                        </div>
+                    </div>
+                    <div class="product_info">
+                        <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
+                        <p><em>94,170</em>원<del>129,000원</del></p>
+                        <P><span>2pcs 이상 구매시 10% 할인</span></P>
+                        <a href="#" class="color_choice"><p>더 많은 색상 선택 가능</p></a>
+                    </div>
+                </li>
+                <li class=""> <!-- 여섯번째 상품 -->
+                    <div class="product_main">
+                        <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J325246BEH_MO-TP-F1.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                        <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        <div class="size">
+                            <a href="#">사이즈 선택</a>
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                        </div>
+                    </div>
+                    <div class="product_info">
+                        <a href="#">남녀공용 릴렉스핏 모노그램 집업 후디</a>
+                        <p><em>94,170</em>원<del>129,000원</del></p>
+                        <P><span>스웻셔츠 온라인 특가</span></P>
+                    </div>
+                </li>
+                <li class=""> <!-- 일곱번째 상품 -->
+                    <div class="product_main">
+                        <a href="#" class="photo"><img src="./img/calvinklein_imgaes/C27_01_J400348YAF_MO-TP-F10.jpg" alt="남자모델"></a><!-- 남자베너 -->
+                        <a href="#" class="favorite"><img src="./img/icon/favorite.png" alt=""></a><!-- 하트 위시리스트 추가 -->
+                        <div class="size">
+                            <a href="#">사이즈 선택</a>
+                            <a href="#">XS</a>
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                        </div>
+                    </div>
+                    <div class="product_info">
+                        <a href="#">남녀공용 베이직 로고 긴팔 티셔츠</a>
+                        <p><em>47,450</em>원<del>65,000원</del></p>
+                        <P><span>2pcs 이상 구매시 10% 할인</span></P>
+                    </div>
+                </li>
+            </ul> 
+        </div>
         <div class="basket_background"> <!-- 장바구니 ! ->검은색 배경주기 -->
             <div class="basket_product"> <!-- 컨텐츠 내용 -->
                 <div class="prodiuct_top">
@@ -689,28 +638,28 @@
             </div>
         </div> 
         <div class="contents_all">
-            <div class="bottom_contents1"><!-- 백그라운드 이미지 주기1 -->
+            <div class="bottom_contents1 category_box"><!-- 백그라운드 이미지 주기1 -->
                 <div class="contents_sub">
                     <h1>Timeless Essentials</h1>
                     <a href="#" class="best_buy"><p >베스트 셀러 구매하기</p></a>
                     <a href="#" class="exclusive_buy"><p>ONLINE EXCLUSIVE 구매하기</p></a>
                 </div>
             </div>
-            <div class="bottom_contents2"><!-- 백그라운드 이미지 주기 2-->
+            <div class="bottom_contents2 category_box"><!-- 백그라운드 이미지 주기 2-->
                 <div class="contents_sub">
                     <h1>Embrace the Cozy Chic</h1>
                     <a href="#" class="men_buy"><p>남성가방 구매하기</p></a>
                     <a href="#" class="women_buy"><p>여성가방 구매하기</p></a>
                 </div>
             </div>
-            <div class="bottom_contents3"><!-- 백그라운드 이미지 주기 3-->
+            <div class="bottom_contents3 category_box"><!-- 백그라운드 이미지 주기 3-->
                 <div class="contents_sub">
                     <h1>Activate Your Style</h1>
                     <a href="#" class="men_buy"><p>남성 의류 구매하기</p></a>
                     <a href="#" class="women_buy"><p>여성 의류 구매하기</p></a>
                 </div>
             </div>
-            <div class="bottom_contents4"><!-- 백그라운드 이미지 주기 4-->
+            <div class="bottom_contents4 category_box"><!-- 백그라운드 이미지 주기 4-->
                 <div class="contents_sub">
                     <h1>Luxury in Comfort</h1>
                     <a href="#" class="men_buy"><p>남성 언더웨어 구매하기</p></a>
@@ -785,5 +734,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script/common.js"></script>
+    <script src="./script/index.jss"></script>
 </body>
 </html> 

@@ -1,18 +1,11 @@
 
-.plus {
+.popup {position: fixed; top: 0; z-index: 999;}
+.popup_contents {
     text-align: center;
-    padding: 10px 0;
+    padding:20px 0;
     background: #44b151;
     color: #fff;
 }
-.minus {
-    text-align: center;
-    padding: 10px 0;
-    background: #44b151;
-    color: #fff;
-}
-
-
 
 /* 네비게이션 */
 main .nav_background{
@@ -249,7 +242,7 @@ main .main_product .product_right .shopping dl dd:nth-child(17)
 
 /* 상품 */
 main .product_box {
-    overflow: hidden; width: 1900px;
+ width: 1900px;
 }
 main .product_contents {
 }

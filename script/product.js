@@ -49,9 +49,33 @@ const popup_contents = document.querySelector('.popup_contents')
 popup_contents.style.display = 'none'
 let heart_reset = true
 heart.addEventListener('click',()=>{
-
+    heart_reset = !heart_reset
+    if(heart_reset === false){
+        popup_contents.innerHTML = '이 제품이 위시리스트에 추가되었습니다'
+    }else{
+        popup_contents.innerHTML = '이 제품이 위시리스트에 삭제되었습니다'
+    }
+    popup_contents.style.display = 'block'
+    setTimeout(()=>{
+        popup_contents.style.display = 'none'
+    },3000)
 })
-
+const favorite = document.querySelectorAll('.favorite')
+let favorite_reset = true
+for(let i of favorite){
+    favorite_reset =!favorite_reset
+    i.addEventListener('click',()=>{
+        if(favorite_reset ===false){
+            popup_contents.innerHTML = '이 제품이 위시리스트에 추가되었습니다'
+        }else{
+            popup_contents.innerHTML = '이 제품이 위시리스트에 삭제되었습니다'
+        }
+        popup_contents.style.display = 'block'
+        setTimeout(()=>{
+            popup_contents.style.display = 'none'
+        },3000)
+    })
+}
 
 
 
