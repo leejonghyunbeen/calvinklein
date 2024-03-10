@@ -56,8 +56,7 @@ main .nav_background{
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
-    z-index: 999; left: 0; top: 0; 
-    display: none;
+    z-index: 999; left: 0; top: 0;  
 }
 
 main .nav_background .nav_contents_background {/* 컨텐츠 백그라운드 */
@@ -143,3 +142,30 @@ footer .first_footer .contents a{
 .footer_last .sns a {margin-right: 9px;}
 .footer_last .sns a i {}
 .footer_last .sns a img {}
+
+
+
+/* js */
+.category_ani {
+    animation: category 0.3s ;
+}
+@keyframes category {
+    0%{
+        transform: translateX(-4000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.close_ani {
+    animation:close_ani 0.5s ;
+}
+@keyframes close_ani {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-4000px);
+    }
+}

@@ -5,7 +5,7 @@ main .holiyday {
 } /* 여기에 고민시 이미지 */
 main .holiyday .giving {
     padding-top: 90px; text-align: center;
-}
+}   
 main .holiyday .giving h1 {color: #fff; font-size:1.5rem; font-weight: bold; padding-bottom: 30px;}
 main .holiyday .giving a {
     border: 1px solid #fff; color: #fff; padding:10px 40px 10px 40px;
@@ -50,7 +50,9 @@ main .product_content li .product_main .photo{}
 main .product_content li .product_main .photo img {width: 100%; height: 685px;  }
 main .product_content li .product_main .favorite  {}
 main .product_content li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
-main .product_content li .product_main .size {}
+main .product_content li .product_main .size {
+    
+}
 main .product_content li .product_main .size a {}
 main .product_content li .product_main .product_info {}
 main .product_content li .product_info a {font-size: 0.875rem;}   
@@ -58,6 +60,25 @@ main .product_content li .product_info p {font-size: 0.875rem;}
 main .product_content li .product_info p em {}
 main .product_content li .product_info p del {}
 main .product_content li .product_info a {}
+
+
+/* 메인 사이즈 공통 */
+main .product_main .size{
+    position: absolute; bottom: 0;
+    width: 100%; padding: 35px; background: rgba(255, 255, 255, 0.693);
+    text-align: center; display: flex; flex-flow: column nowrap;
+}
+main .product_main .size .contack {margin-bottom: 15px;}
+main .product_main .size .contack a{
+   font-weight: 4   00;
+}
+main .product_main .size .size_box{
+    width: 65%; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-around;
+}
+main .product_main .size .size_box a {
+    font-size: 1.25rem; font-weight: 500;
+}
 
 /* 일단메인부터 */
 main .new_product {}/* 배경에 여자베너 */
@@ -91,7 +112,7 @@ main .main1_product {
 main .main1_product li {}
 main .main1_product li .product_main {position: relative;}
 main .main1_product li .product_main .photo {}
-main .main1_product li .product_main .photo img {width: 548px; height: 685px; padding-right: 10px;}
+main .main1_product li .product_main .photo img {width: 100%; height: 685px; }
 main .main1_product li .product_main .favorite {}
 main .main1_product li .product_main .favorite img{position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 main .main1_product li .product_main .size {}
@@ -262,7 +283,7 @@ main .fashion_product {display: flex;
 main .fashion_product li {}
 main .fashion_product li .product_main {position: relative;}
 main .fashion_product li .product_main .photo{}
-main .fashion_product li .product_main .photo img {width: 548px; height: 685px; padding-right: 10px;}
+main .fashion_product li .product_main .photo img {width: 100%; height: 685px; padding-right: 10px;}
 main .fashion_product li .product_main .favorite {}
 main .fashion_product li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 main .fashion_product li .product_main .size {}
@@ -483,4 +504,18 @@ main .member_join a {background: #fff;
     border: 1px solid #fff; 
     padding: 11px 32px 8px;
     color: #000; margin-left: 20px;
+}
+
+
+
+
+
+
+/* js */
+.product_ani {
+    animation:product 0.3s;
+}
+@keyframes product {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }

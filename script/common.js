@@ -17,4 +17,17 @@ let header_slide = new Swiper('.wrap',{
     slidesPerView: 1,
     autoplay:{delay:3000}
 })
+// 카테고리
+const nav_background = document.querySelector('.nav_background')
+const header_categori =document.querySelector('.header_categori')
+const nav_close =document.querySelector('.nav_top .close a')
+nav_background.style.display = 'none'
 
+header_categori.addEventListener('click',()=>{
+    nav_background.style.display = 'block'
+    nav_background.classList.add('category_ani')
+})
+
+nav_close.addEventListener('click',()=>{
+    nav_background.style.display = 'none'
+})

@@ -242,7 +242,7 @@ main .main_product .product_right .shopping dl dd:nth-child(17)
 
 /* 상품 */
 main .product_box {
- width: 1900px;
+ width: 1900px; overflow: hidden;
 }
 main .product_contents {
 }

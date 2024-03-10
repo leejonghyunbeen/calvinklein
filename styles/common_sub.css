@@ -60,7 +60,7 @@ header .header_categori {
 }
 header .header_categori a {color: #000; margin-right: 15px; font-size: 0.813rem;
 }
-header .head_contents  .mobile_header {display: none;}  /* 모바일 헤더*/
+header .head_contents  .mobile_header {display: none;}  모바일 헤더
 
 footer {margin-top: 20px;
     ; padding: 0 40px  0;
