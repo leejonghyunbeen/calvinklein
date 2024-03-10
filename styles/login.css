@@ -11,7 +11,8 @@
 }
 /* 탭 제목 */
 #login_wrap  #loginFrm fieldset .login_title {
-    display: flex;
+    padding-bottom: 10px;
+    display: flex; border-bottom: 1px solid #808080;
 }
 #login_wrap  #loginFrm fieldset .login_title h2 {
     width: calc(100% / 2 );  display: flex;
@@ -26,7 +27,10 @@
     border-top-right-radius: 5px;
 }
 #login_wrap #loginFrm fieldset .login_title h2 a {
-    width: 100%; line-height: 60px; 
+    width: 100%; line-height: 60px;      padding-bottom: 17px;
+}
+#login_wrap #loginFrm fieldset .login_container{
+    padding-top: 20px;
 }
 #login_wrap #loginFrm fieldset .login_container .id_login .id_pw_input{
     display: flex ; flex-flow: column nowrap;
@@ -40,41 +44,50 @@
 #login_wrap #loginFrm fieldset .login_container .login_c .id_pw_state {}
 /* 콘텐츠  */
 #login_wrap  #loginFrm fieldset .login_container .login_c {}
-#login_wrap  #loginFrm fieldset .login_container .login_c .id_pw_input {background-color: pink;}
-#login_wrap  #loginFrm fieldset .login_container .login_c .id_pw_input  span #userId {width: 100%; padding: 18px 14px 5px; margin-bottom: 10px; margin-top: 10px;}
+#login_wrap  #loginFrm fieldset .login_container .id_pw_input span {
+    border: 1px solid #000;
+}
+#login_wrap  #loginFrm fieldset .login_container .id_pw_input span:nth-of-type(1){
+    margin-bottom: 10px;
+}
+#login_wrap  #loginFrm fieldset .login_container .login_c .id_pw_input {}
+#login_wrap  #loginFrm fieldset .login_container .login_c .id_pw_input  span #userId {width: 100%; padding: 18px 14px 5px; }
 #login_wrap  #loginFrm fieldset .login_container .login_c .id_pw_input  span
-#userpW {width: 100%; padding: 18px 14px 5px;} 
+#userpW {width: 100%; padding: 18px 14px 5px; } 
 /* 기억하기 */
 #login_wrap #loginFrm fieldset .login_container .login_c .id_pw_state{
     margin: 15px 0;
 }
 /* 로그인버튼 */
-#login_wrap #loginFrm fieldset .login_container .login_c #loginBtn,
-#login_wrap #loginFrm fieldset .login_container .login_c #joinBtn {
+#login_wrap #loginFrm fieldset .login_container .login_c .loginBtn,
+#login_wrap #loginFrm fieldset .login_container .login_c .joinBtn {
     width: 100%; padding: 11px 32px 8px;  margin-bottom: 10px;
     border: 0;
 }
 #login_wrap #loginFrm fieldset .login_container .login_c .login_btn_wrap {}
-#login_wrap #loginFrm fieldset .login_container .login_c .login_btn_wrap #loginBtn{width: 100%; padding: 11px 32px 8px; color: #fff; background: #000;}
+#login_wrap #loginFrm fieldset .login_container .login_c .login_btn_wrap .loginBtn{width: 100%; padding: 11px 32px 8px; color: #fff; background: #000;}
 #login_wrap #loginFrm fieldset .login_container .login_c .naver_login {}
-#login_wrap #loginFrm fieldset .login_container .naver_login #loginBtn{
+#login_wrap #loginFrm fieldset .login_container .naver_login .loginBtn{
     color: #fff; background: #03cf5d;
 }
 #login_wrap #loginFrm fieldset .login_container .login_c  .kakao_login {}
-#login_wrap #loginFrm fieldset .login_container .kakao_login #loginBtn{
+#login_wrap #loginFrm fieldset .login_container .kakao_login .loginBtn{
     background: #fee500;
 }
 #login_wrap #loginFrm fieldset .login_container .login_c .face_join {}
-#login_wrap #loginFrm fieldset .login_container .face_join #joinBtn{
-    border: 3px solid #000;
+#login_wrap #loginFrm fieldset .login_container .face_join .joinBtn{
+    border: 3px solid #000 !important;
 }
 #login_wrap #loginFrm fieldset .login_container .login_c .join {
     padding: 24px 0; border-top: 1px solid #bdbdbd;
 }
-#login_wrap #loginFrm fieldset .login_container .login_c .join #joinBtn{
+#login_wrap #loginFrm fieldset .login_container .login_c .join .joinBtn{
     border: 1px solid #000; 
 }
-#login_wrap #loginFrm fieldset .login_container .benefit {background-color: aqua;}
+#login_wrap #loginFrm fieldset .login_container .login_c .join .joinBtn:hover{
+    background: #000; color: #fff; transition: 0.5s;
+}
+#login_wrap #loginFrm fieldset .login_container .benefit {}
 #login_wrap #loginFrm fieldset .login_container .benefit .contents {}
 #login_wrap #loginFrm fieldset .login_container .benefit .contents h1 {
     font-size: 1.125rem;
@@ -168,7 +181,11 @@ span {padding-right: 20px;}
 }
 
 #login_wrap #loginFrm fieldset .login_container .join .contents .join_btn {}
-#login_wrap #loginFrm fieldset .login_container .join .contents .join_btn #join{
+#login_wrap #loginFrm fieldset .login_container .join .contents .join_btn #join_clear{
     width: 100%; padding: 11px 32px 8px;  margin-bottom: 10px;
     border: 0; color: #fff; background: #000;
+}
+/* js */
+.boder_bottom {
+    border-bottom: 3px solid #000 ; 
 }

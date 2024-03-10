@@ -8,8 +8,13 @@ header .text_box {
     } /* 상단 전체 */
 header .text_box .wrap {
     display: flex;  width: 100%; 
-    text-align: center;
+    text-align: center; position: relative;
 } /* 텍스트와 < >아이콘*/
+
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    display: none;
+}
 header .text_box .wrap .a_text {margin: 0 auto;}
 header .text_box .wrap .a_text a {color: #fff;}
 header .text_box .wrap .a_text a:nth-child(2) {color: #fff;}
@@ -17,7 +22,8 @@ header .text_box .wrap .a_text a:nth-child(3) {color: #fff;}
 header .text_box .wrap .a_text a:nth-child(4) {color: #fff;}
 header .text_box .wrap .a_text a:nth-child(5) {color: #fff;}
 header .text_box .wrap .a_text a span {color: #fff; text-decoration: underline;}
-header .text_box .wrap .next_freeview {display: flex; }
+header .text_box .wrap .next_freeview {
+}
 header .text_box .wrap .next_freeview .prev {position: absolute; left: 100px;} /* 이전이미지 */
 header .text_box .wrap .next_freeview .prev img {}
 header .text_box .wrap .next_freeview .next  {position: absolute; right:100px;} /* 다음 이미지 */
@@ -110,7 +116,7 @@ main .nav_background .nav_contents_background .nav_contents .content_main .nav_r
 }
 main .nav_background .nav_contents_background .nav_contents .content_main .nav_right a:nth-child(2) {margin-left: 20px;}
  /* footer */
-footer {margin-top: 20px; padding: 0 40px 0 0;
+footer {margin-top: 20px; padding: 0 40px  0;
 }
 footer .first_footer {
     display: flex; flex-flow: row nowrap; padding: 25px 0;

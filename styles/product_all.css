@@ -1,5 +1,7 @@
 main {}
-main section {}
+main section {
+    padding: 0 40px;
+}
 main section .all_contents {
     text-align: center;
     margin: 0 0 13px;

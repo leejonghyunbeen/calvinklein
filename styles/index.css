@@ -53,13 +53,27 @@ main .product_content li .product_main .favorite img {position: absolute; right:
 main .product_content li .product_main .size {
     
 }
+.product_info{
+    padding: 15px 10px 11px; 
+}
+.product_info p {
+    padding: 5px 0;
+}
 main .product_content li .product_main .size a {}
-main .product_content li .product_main .product_info {}
+main .product_content li .product_main .product_info {
+    
+}
 main .product_content li .product_info a {font-size: 0.875rem;}   
 main .product_content li .product_info p {font-size: 0.875rem;}
-main .product_content li .product_info p em {}
-main .product_content li .product_info p del {}
-main .product_content li .product_info a {}
+main ul li em {
+    font-weight: 700; 
+}
+main  del {
+    text-decoration: line-through;
+}
+main .product_content li .product_info a {
+    color: #696969;    
+}
 
 
 /* 메인 사이즈 공통 */
@@ -245,7 +259,9 @@ main .Outerwear_freebies .freebies_left .left_contents .join:hover{
 }
 .main1_product li {}
 .main1_product li .product_info {}
-.main1_product li .product_info a {}
+.main1_product li .product_info a {
+    color: #696969;
+}
 .main1_product li .product_info span {color: red;}
 /* 가방 구입칸 */
 main .winter_product {
@@ -289,7 +305,9 @@ main .fashion_product li .product_main .favorite img {position: absolute; right:
 main .fashion_product li .product_main .size {}
 main .fashion_product li .product_main .size a {}
 main .fashion_product li .product_info {}
-main .fashion_product li .product_info a {}
+main .fashion_product li .product_info a {
+    color:#696969 ;
+}
 main .fashion_product li .product_info p {}
 main .fashion_product li .product_info p em {}
 main .fashion_product li .product_info p del {}

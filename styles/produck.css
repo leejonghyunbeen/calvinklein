@@ -1,6 +1,7 @@
 
 .popup {position: fixed; top: 0; z-index: 999;}
 .popup_contents {
+    width: 100vw;
     text-align: center;
     padding:20px 0;
     background: #44b151;

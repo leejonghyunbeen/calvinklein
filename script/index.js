@@ -18,3 +18,18 @@ product_all.forEach((target,index)=>{
         size_all[index].style.display ='none'
     })
 })
+const header_nav =document.querySelectorAll('header .right a')
+const nav_link = ['#','./login.html','./wishlist.html','./shopping_basket.html']
+
+header_nav.forEach((target,index)=>{
+    target.addEventListener('click',(e)=>{
+        window.location = nav_link[index]
+    })
+})
+
+const produck_link = document.querySelectorAll ('ul li a')
+for(let i of produck_link){
+    i.addEventListener('click',()=>{
+        window.location = './product.html'
+    })
+}

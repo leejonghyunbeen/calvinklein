@@ -21,7 +21,25 @@ let header_slide = new Swiper('.wrap',{
         prevEl:'.wrap .swiper-button-prev',
     },
 })
-// 카테고리
+const first_footer =document.querySelectorAll ('.first_footer a')
+for(let i of  first_footer){
+    i.addEventListener('click',()=>{
+        window.location = './service.html'
+    })
+}
+const header_nav =document.querySelectorAll('header .right a')
+const nav_link = ['#','./login.html','./wishlist.html','./shopping_basket.html']
+
+header_nav.forEach((target,index)=>{
+    target.addEventListener('click',(e)=>{
+        window.location = nav_link[index]
+    })
+})
+const logo = document.querySelector('.logo_gender h1 a')
+logo.addEventListener('click',()=>{
+    window.location = './index.html'
+})
+
 const nav_background = document.querySelector('.nav_background')
 const header_categori =document.querySelector('.header_categori')
 const nav_close =document.querySelector('.nav_top .close a')
@@ -35,15 +53,10 @@ header_categori.addEventListener('click',()=>{
 nav_close.addEventListener('click',()=>{
     nav_background.style.display = 'none'
 })
-const first_footer =document.querySelectorAll ('.first_footer a')
-for(let i of  first_footer){
-    i.addEventListener('click',()=>{
-        window.location = './service.html'
-    })
-}
+
 
 // 전체 상품 가기
-const gender_nav =document.querySelectorAll('.gender_nav')
+const gender_nav =document.querySelectorAll('nav a')
 for(let i of gender_nav){
     i.addEventListener('click',()=>{
         window.location = './product_all.html'
