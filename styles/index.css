@@ -68,6 +68,14 @@ main .product_content li .product_info p {font-size: 0.875rem;}
 main ul li em {
     font-weight: 500; 
 }
+
+main .product_allbox,
+main #allbox_second,
+main #thide_box{
+    overflow: hidden;
+    margin: 0 auto;
+    width: calc(100% -  40px);
+}
 main  del {
     text-decoration: line-through;
 }
@@ -78,6 +86,7 @@ main .product_content li .product_info a {
 
 /* 메인 사이즈 공통 */
 main .product_main .size{
+    z-index: 9999;
     position: absolute; bottom: 0;
     width: 100%; padding: 25px; background: rgba(255, 255, 255, 0.693);
     text-align: center; display: flex; flex-flow: column nowrap;
@@ -133,7 +142,7 @@ main .main1_product li .product_main .size {}
 main .main1_product li .product_main .size a {}
 /* 장바구니안 */
 main .basket_background 
-{   display: none;
+{   
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);

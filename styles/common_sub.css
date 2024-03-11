@@ -20,8 +20,8 @@ header .text_box .wrap .a_text {
 }
 header .text_box .wrap .a_text a {
     padding: 10px 0;
-    color: #fff; background: #000; font-size: 0.75rem;}
-header .text_box .wrap .a_text a span {color: #fff; text-decoration: underline; font-size: 0.75rem }
+    color: #fff; background: #000; }
+header .text_box .wrap .a_text a span {color: #fff; text-decoration: underline;  padding-left: 5px;}
 header .text_box .wrap .next_freeview {
 }
 header .text_box .wrap .next_freeview .prev {position: absolute; left: 100px;} /* 이전이미지 */

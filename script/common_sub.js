@@ -14,6 +14,7 @@ close_btn.addEventListener('click',()=>{
 })
 // swiper
 let header_slide = new Swiper('.wrap',{
+    loop:true,
     slidesPerView: 1,
     autoplay:{delay:3000},
     navigation:{

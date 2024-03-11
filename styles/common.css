@@ -87,6 +87,9 @@ main .nav_background .nav_contents_background .nav_contents .nav_top .menu {}
 main .nav_background .nav_contents_background .nav_contents .nav_top .menu a {
     font-size: 0.813rem; margin-right: 20px; color: #aaa;
 }
+main .nav_background .nav_contents_background .nav_contents .nav_top .menu a:hover{
+    color: #fff;
+}
 main .nav_background .nav_contents_background .nav_contents .nav_top .close {}
 main .nav_background .nav_contents_background .nav_contents .nav_top .close a {}
 main .nav_background .nav_contents_background .nav_contents .nav_top .close a img { 
@@ -180,3 +183,15 @@ footer .first_footer .contents a{
         transform: translateX(-4000px);
     }
 }
+.basket {
+    animation: basket 0.2s ;
+}
+@keyframes basket {
+    0%{
+        transform: translateX(4000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
