@@ -56,7 +56,7 @@ main .product_content li .product_main .size {
 .product_info{
     padding: 15px 10px 11px; 
 }
-.product_info p {
+.product_info p:nth-of-type(1) {
     padding: 5px 0;
 }
 main .product_content li .product_main .size a {}
@@ -66,7 +66,7 @@ main .product_content li .product_main .product_info {
 main .product_content li .product_info a {font-size: 0.875rem;}   
 main .product_content li .product_info p {font-size: 0.875rem;}
 main ul li em {
-    font-weight: 700; 
+    font-weight: 500; 
 }
 main  del {
     text-decoration: line-through;
@@ -79,19 +79,19 @@ main .product_content li .product_info a {
 /* 메인 사이즈 공통 */
 main .product_main .size{
     position: absolute; bottom: 0;
-    width: 100%; padding: 35px; background: rgba(255, 255, 255, 0.693);
+    width: 100%; padding: 25px; background: rgba(255, 255, 255, 0.693);
     text-align: center; display: flex; flex-flow: column nowrap;
 }
 main .product_main .size .contack {margin-bottom: 15px;}
 main .product_main .size .contack a{
-   font-weight: 4   00;
+   font-weight: 300;
 }
 main .product_main .size .size_box{
     width: 65%; margin: 0 auto;
     display: flex; flex-flow: row nowrap; justify-content: space-around;
 }
 main .product_main .size .size_box a {
-    font-size: 1.25rem; font-weight: 500;
+    font-size: 1rem; font-weight: 300;
 }
 
 /* 일단메인부터 */

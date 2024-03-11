@@ -17,6 +17,15 @@ close_btn.addEventListener('click',()=>{
 })
 
 
+window.addEventListener('scroll',function(){
+    let scroll_text = window.scrollY;
+    if(scroll_text >=100){
+        text_box.style.display = 'none'
+    }else{
+        text_box.style.display = 'block'
+    }
+})
+
 
 // swiper
 let header_slide = new Swiper('.wrap',{
