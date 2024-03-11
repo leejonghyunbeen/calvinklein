@@ -4,7 +4,8 @@ header {
     left: 0; top: 0; z-index: 999;
 }
 header .text_box {
-    display: flex;   padding: 3px;
+    background: #000; 
+    display: flex;   padding: 10px;  position: relative;
     } /* 상단 전체 */
 header .text_box .wrap {
     display: flex;  width: 100%; 
@@ -28,8 +29,12 @@ header .text_box .wrap .next_freeview .prev {position: absolute; left: 100px;} /
 header .text_box .wrap .next_freeview .prev img {}
 header .text_box .wrap .next_freeview .next  {position: absolute; right:100px;} /* 다음 이미지 */
 header .text_box .wrap .next_freeview .next img {}
-header .text_box .close_icon {} 
-header .text_box .close_icon img {color: #fff;} /* 닫기 */
+header .text_box .close_icon {
+    position: absolute; right: 0; top: 6%; z-index: 999;
+} 
+header .text_box .close_icon img {
+    width: 26px;
+} /* 닫기 */
 header .head_contents {
     display: flex;  justify-content: space-between;  padding: 20px;
 } /* 상단 검색 및 정보 */

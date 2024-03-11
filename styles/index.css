@@ -42,7 +42,7 @@ main .holiyday .holiyday_buy .brand_saie:hover{
     width: 1900px;
 }
 main .product_content {
-    display: flex; margin-left: 40px; 
+    display: flex; 
 }
 main .product_content li {}
 main .product_content li .product_main{position: relative;}
@@ -120,7 +120,7 @@ main .new_product .product_contents {
     background: #fff; color: #000  ; transition: 0.4s;
 }
 main .main1_product {
-    display: flex;margin-left: 35px;
+    display: flex;
 }
 
 main .main1_product li {}
@@ -294,7 +294,7 @@ main .winter_product .product_contents .contes_sub .women_buy:hover{
 }
 /* 다시 가방 상품 */
 main .fashion_product {display: flex; 
-    margin-left: 35px; 
+    
 }
 main .fashion_product li {}
 main .fashion_product li .product_main {position: relative;}

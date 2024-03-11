@@ -9,9 +9,15 @@ for(let i of all_a){
 const text_box = document.querySelector('.text_box')
 const close_btn =document.querySelector('.close_icon')
 console.log(close_btn)
+console.log(text_box)
+
+
 close_btn.addEventListener('click',()=>{
     text_box.style.display = 'none'
 })
+
+
+
 // swiper
 let header_slide = new Swiper('.wrap',{
     slidesPerView: 1,
@@ -49,3 +55,4 @@ for(let i of gender_nav){
         window.location = './product_all.html'
     })
 }
+
