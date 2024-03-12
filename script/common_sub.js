@@ -63,11 +63,11 @@ for(let i of gender_nav){
         window.location = './product_all.html'
     })
 }
-window.addEventListener('scroll',function(){
-    let scroll_text = window.scrollY;
-    if(scroll_text >=200){
-        text_box.style.display = 'none'
-    }else{
-        text_box.style.display = 'block'
-    }
-})
+// window.addEventListener('scroll',function(){
+//     let scroll_text = window.scrollY;
+//     if(scroll_text >=200){
+//         text_box.style.display = 'none'
+//     }else{
+//         text_box.style.display = 'block'
+//     }
+// })
