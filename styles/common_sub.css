@@ -4,7 +4,7 @@ header {
     left: 0; top: 0; z-index: 999;
 }
 header .text_box {
-    display: flex;   padding: 3px; position: relative;
+    display: flex;   position: relative;
     } /* 상단 전체 */
 header .text_box .wrap {
     display: flex;  width: 100%; 

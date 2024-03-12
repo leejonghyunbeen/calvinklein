@@ -143,8 +143,10 @@ main .nav_background .nav_contents_background .nav_contents .content_main .nav_l
 main .nav_background .nav_contents_background .nav_contents .content_main .nav_left p {
     color: #aaa; font-size: 0.813rem; margin-bottom: 40px;
 }
-main .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf {display: flex; flex-flow: column; margin-right: 200px;}
-main .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf a {margin-bottom: 20px; color: #fff;font-size: 0.813rem;}
+main .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf { margin-right: 200px;}
+main .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf a {margin-bottom: 20px; color: #fff;font-size: 0.813rem;
+    display: block; width: max-content;
+}
 main .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf .exclusive {color: #78b6ed;}
 main .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_right {
     margin-top: 56px; display: flex; flex-flow: column nowrap;  
