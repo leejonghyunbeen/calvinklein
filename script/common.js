@@ -100,6 +100,7 @@ const men_plus =document.querySelector('.men_plus img')
 const women_plus =document.querySelector('.women_plus img')
 const mo_login = document.querySelector('.mo_join')
 const mo_help = document.querySelector('.mo_help')
+const mo_bg= document.querySelectorAll('.mo_bg a')
 
 mo_nav.style.display='none'
 mo_bar.addEventListener('click',()=>{
@@ -143,3 +144,10 @@ mo_login.addEventListener('click',()=>{
 mo_help.addEventListener('click',()=>{
     window.location = './service.html'
 })
+
+for(let i of mo_bg){
+    console.log(i)
+    i.addEventListener('click',()=>{
+        window.location = './product_all.html'
+    })
+}

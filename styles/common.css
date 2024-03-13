@@ -316,9 +316,9 @@ footer .first_footer  .contents1  {}
 footer .first_footer .contents2 {}
 footer .first_footer .contents3 {}
 footer .first_footer .contents4 {}
-footer .first_footer .contents h1{padding-bottom: 8px;}
+footer .first_footer .contents h1{padding-bottom: 8px; font-size: 0.875rem;}
 footer .first_footer .contents a{
-    padding-bottom: 8px;
+    padding-bottom: 8px; font-size: 0.875rem;
     display: block;}
 .footer_last {
     display: flex; justify-content: space-between;
