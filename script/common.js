@@ -101,7 +101,7 @@ const women_plus =document.querySelector('.women_plus img')
 const mo_login = document.querySelector('.mo_join')
 const mo_help = document.querySelector('.mo_help')
 
-// mo_nav.style.display='none'
+mo_nav.style.display='none'
 mo_bar.addEventListener('click',()=>{
     mo_nav.style.display='block'
 })
