@@ -12,7 +12,8 @@ loginBtn.addEventListener('click',()=>{
         loginBtn.classList.add('boder_bottom')
 })
     
-    
+
+loginBtn.classList.add('boder_bottom')
 joinBtn.addEventListener('click',()=>{
     loginBtn.classList.remove('boder_bottom')
     join_contents.style.display = 'block'
@@ -25,4 +26,9 @@ new_join.addEventListener('click',()=>{
     join_contents.style.display = 'block'
     id_login.style.display='none'
     joinBtn.classList.add('boder_bottom')
+})
+
+const service_link = document.querySelector('#contents_bottom a')
+service_link.addEventListener('click',()=>{
+    window.location = './service.html'
 })

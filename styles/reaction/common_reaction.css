@@ -1,0 +1,17 @@
+/* 1200px -> 1020px ->760px -> */
+@media screen and (max-width:1200px){
+    footer .contents{width: 33%;}
+    footer .contents4{width: 100%;}
+    .mo_bar{display: block;}
+    header .header_categori{
+        display: none;
+    }
+    .logo_gender nav{display: none;}
+    header .head_contents .right a:nth-of-type(1),
+    header .head_contents .right a:nth-of-type(2){
+        display: none;
+    }
+}
+@media screen and (max-width:1020px){
+
+}

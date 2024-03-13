@@ -2,6 +2,7 @@ main {}
 main .holiyday {
     background: url(../img/calvinklein_imgaes/pc_home_main_240122.jpg);
     background-size: cover; padding-top: 250px   ; 
+    background-position: center;
 } /* 여기에 고민시 이미지 */
 main .holiyday .giving {
     padding-top: 90px; text-align: center;
@@ -43,11 +44,12 @@ main .holiyday .holiyday_buy .brand_saie:hover{
 }
 main .product_content {
     display: flex; 
+    margin-bottom: 40px;
 }
 main .product_content li {}
 main .product_content li .product_main{position: relative;}
 main .product_content li .product_main .photo{}
-main .product_content li .product_main .photo img {width: 100%; height: 685px;  }
+main .product_content li .product_main .photo img {width: 100%;}
 main .product_content li .product_main .favorite  {}
 main .product_content li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 main .product_content li .product_main .size {
@@ -66,7 +68,7 @@ main .product_content li .product_main .product_info {
 main .product_content li .product_info a {font-size: 0.875rem;}   
 main .product_content li .product_info p {font-size: 0.875rem;}
 main ul li em {
-    font-weight: 500; 
+    font-weight: 500; font-size: 0.813rem;
 }
 
 main .product_allbox,
@@ -75,12 +77,13 @@ main #thide_box{
     overflow: hidden;
     margin: 0 auto;
     width: calc(100% -  40px);
+    margin-bottom: 40px;
 }
 main  del {
-    text-decoration: line-through;
+    text-decoration: line-through; font-size: 0.813rem;
 }
 main .product_content li .product_info a {
-    color: #696969;    
+    color: #696969;    font-size: 0.813rem;
 }
 
 
@@ -93,7 +96,7 @@ main .product_main .size{
 }
 main .product_main .size .contack {margin-bottom: 15px;}
 main .product_main .size .contack a{
-   font-weight: 300;
+font-weight: 300;
 }
 main .product_main .size .size_box{
     width: 65%; margin: 0 auto;
@@ -108,6 +111,7 @@ main .new_product {}/* 배경에 여자베너 */
 main .new_product .product_contents {
     background: url(../img/calvinklein_imgaes/pc_home_240103.jpg);
     background-size: cover; margin-bottom: 20px;
+    background-position: center;
 }
 .new_product .product_contents .contes_sub{
     text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
@@ -135,7 +139,7 @@ main .main1_product {
 main .main1_product li {}
 main .main1_product li .product_main {position: relative;}
 main .main1_product li .product_main .photo {}
-main .main1_product li .product_main .photo img {width: 100%; height: 685px; }
+main .main1_product li .product_main .photo img {width: 100%; }
 main .main1_product li .product_main .favorite {}
 main .main1_product li .product_main .favorite img{position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 main .main1_product li .product_main .size {}
@@ -269,13 +273,13 @@ main .Outerwear_freebies .freebies_left .left_contents .join:hover{
 .main1_product li {}
 .main1_product li .product_info {}
 .main1_product li .product_info a {
-    color: #696969;
+    color: #696969; font-size: 0.813rem;
 }
-.main1_product li .product_info span {color: red;}
+.main1_product li .product_info span {color: red; font-size: 0.813rem;}
 /* 가방 구입칸 */
 main .winter_product {
     background: url(../img/calvinklein_imgaes/pc_women_acc_231019.jpg);
-    background-size: cover;
+    background-size: cover;background-position: center;
 }
 main .winter_product .product_contents {   
     text-align: center;padding:650px 0 0 50px; color: #fff;  margin-bottom: 50px;
@@ -308,16 +312,18 @@ main .fashion_product {display: flex;
 main .fashion_product li {}
 main .fashion_product li .product_main {position: relative;}
 main .fashion_product li .product_main .photo{}
-main .fashion_product li .product_main .photo img {width: 100%; height: 685px; padding-right: 10px;}
+main .fashion_product li .product_main .photo img {width: 100%; padding-right: 10px;}
 main .fashion_product li .product_main .favorite {}
 main .fashion_product li .product_main .favorite img {position: absolute; right: 15px; top: 20px; background:#bdbdbd; border-radius: 50%; padding: 5px;}
 main .fashion_product li .product_main .size {}
 main .fashion_product li .product_main .size a {}
 main .fashion_product li .product_info {}
 main .fashion_product li .product_info a {
-    color:#696969 ;
+    color:#696969 ; font-size: 0.813rem;
 }
-main .fashion_product li .product_info p {}
+main .fashion_product li .product_info p {
+    font-size: 0.813rem;
+}
 main .fashion_product li .product_info p em {}
 main .fashion_product li .product_info p del {}
 /* 카테고리 */
@@ -404,7 +410,7 @@ main .category .men_accessories .text .buy {
 /* 데님 환불 */
 main .exchange {background: url(../img/calvinklein_imgaes/pc_home_main2_240122.jpg);
 background-size: cover; height: 500px; background-position: center ;
-margin-bottom: 10px;
+margin-bottom: 10px; 
 }
 main .exchange .product_contents {}
 main .exchange .product_contents .contes_sub {    

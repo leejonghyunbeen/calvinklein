@@ -4,11 +4,17 @@
 }
 #login_wrap  #loginFrm {
     /* border: 1px solid #ccc; border-radius:5px ; */ 
-    border: 0;
+    border: 0; padding: 0  28px 28px; 
+    background: #fafafa; margin-bottom: 40px;
 }
 #login_wrap  #loginFrm fieldset {
     border: 0;
 }
+
+/* #login_wrap #loginFrm fieldset .login_title h2 #login_click{
+    border-bottom: 3px solid #000 ; 
+} */
+
 /* 탭 제목 */
 #login_wrap  #loginFrm fieldset .login_title {
     padding-bottom: 10px;
@@ -16,7 +22,7 @@
 }
 #login_wrap  #loginFrm fieldset .login_title h2 {
     width: calc(100% / 2 );  display: flex;
-    text-align: center;  background: #ffff;
+    text-align: center;
     border-radius: 0px; height: 60px; 
     justify-content: center; align-items: center;
     border-bottom-left-radius:0 ; border-bottom-right-radius: 0;
@@ -122,13 +128,17 @@
     display: flex ; flex-flow: column nowrap; padding: 22px 0 30px;
 }
 #login_wrap #loginFrm fieldset .login_container .join .contents input {
-    padding: 18px 14px 5px; margin-bottom: 10px;
+    padding: 18px 14px 5px; margin-bottom: 10px; background: #fff;
+    font-size: 0.813rem;
 }
 #login_wrap #loginFrm fieldset .login_container .join .contents .text {margin: 10px 0;}
 #login_wrap #loginFrm fieldset .login_container .join .contents .phone {
     display: flex; justify-content: space-between;
 }
-#login_wrap #loginFrm fieldset .login_container .join .contents .phone #ko {padding: 18px 14px 5px; width: 30%; 
+#login_wrap #loginFrm fieldset .login_container .join .contents .phone #ko {    padding: 14px 14px 5px;
+    width: 30%;
+    background: #fff;
+    height: 10%;
 }
 #login_wrap #loginFrm fieldset .login_container .join .contents .phone #number {
     width:calc(70% - 10px)
@@ -144,10 +154,10 @@
 }
 #login_wrap #loginFrm fieldset .login_container .join .contents .birthday_btn select
 {padding: 18px 14px 5px; margin-bottom: 20px;}
-#login_wrap #loginFrm fieldset .login_container .join .contents .birthday_btn #year {width: 32%;}
-#login_wrap #loginFrm fieldset .login_container .join .contents .birthday_btn #month {width: 32%;}
+#login_wrap #loginFrm fieldset .login_container .join .contents .birthday_btn #year {width: 32%; background: #fff; font-size: 0.813rem;}
+#login_wrap #loginFrm fieldset .login_container .join .contents .birthday_btn #month {width: 32%; background: #fff; font-size: 0.813rem}
 #login_wrap #loginFrm fieldset .login_container .join .contents .birthday_btn #day {
-    width: 32%;
+    width: 32%; background: #fff; font-size: 0.813rem
 }
 #login_wrap #loginFrm fieldset .login_container .join .contents .jender {}
 #login_wrap #loginFrm fieldset .login_container .join .contents .jender p {margin-bottom: 10px;}
@@ -159,7 +169,7 @@ span {padding-right: 20px;}
 /* 공통 폰트 */
 #login_wrap #loginFrm fieldset .login_container .join .contents .chk p{font-size: 0.813rem;}
 #login_wrap #loginFrm fieldset .login_container .join .contents .chk a {
-    font-weight: 800; font-size: 0.813rem;
+    font-weight: 500; font-size: 0.813rem;
 }
 #login_wrap #loginFrm fieldset .login_container .join .contents .chk span {
     font-size: 0.875rem;
