@@ -104,6 +104,7 @@ const mo_bg= document.querySelectorAll('.mo_bg a')
 
 mo_nav.style.display='none'
 mo_bar.addEventListener('click',()=>{
+    mo_nav.classList.add('basket')
     mo_nav.style.display='block'
 })
 mo_close.addEventListener('click',()=>{
@@ -120,6 +121,8 @@ men_title.addEventListener('click',()=>{
         men_contents.style.display='block'
         women_contents.style.display='none'
         men_plus.src = './img/icon/check_indeterminate_small_white.png'
+        women_plus.src = './img/icon/add_white.png'
+        women_result = true
     }else{
         men_contents.style.display='none'
         men_plus.src = './img/icon/add_white.png'
@@ -131,6 +134,8 @@ women_title.addEventListener('click',()=>{
         men_contents.style.display='none'
         women_contents.style.display='block'
         women_plus.src = './img/icon/check_indeterminate_small_white.png'
+        men_result = true
+        men_plus.src = './img/icon/add_white.png'
     }else{
         women_contents.style.display='none'
         women_plus.src = './img/icon/add_white.png'

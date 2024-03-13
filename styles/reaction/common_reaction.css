@@ -12,6 +12,11 @@
         display: none;
     }
 }
-@media screen and (max-width:1020px){
-
+@media screen and (max-width:768px){
+    footer .contents{
+        width: 50%; border: 1px solid #a5a5a5; text-align: center;
+    }
+    footer .first_footer .contents a {
+        font-size: 0.75rem;  
+    }
 }
