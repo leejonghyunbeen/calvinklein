@@ -4,9 +4,19 @@
     main .exchange,main .new_product .product_contents,main .holiyday{
         background-position: right;
     }
+    main .Outerwear_freebies img {
+        width: 100%;
+    }
 }
 @media screen and (max-width:1020px){
-
+    main .Outerwear_freebies{
+        display: flex; flex-flow: column nowrap;
+    }
+    .category_box{
+        width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
 }
 @media screen and (max-width:768px){
 

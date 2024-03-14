@@ -71,3 +71,71 @@ for(let i of gender_nav){
 //         text_box.style.display = 'block'
 //     }
 // })
+// 모바일
+const mo_bar =document.querySelector('.mo_bar')
+const men_contents = document.querySelector('.mo_men_category')
+const women_contents = document.querySelector('.mo_women_category')
+const mo_close = document.querySelector('.mo_close')
+const mo_nav =document.querySelector('.mo_nav')
+const men_title = document.querySelector('.mo_men .mo_title')
+const women_title = document.querySelector('.mo_women .mo_title')
+const men_plus =document.querySelector('.men_plus img')
+const women_plus =document.querySelector('.women_plus img')
+const mo_login = document.querySelector('.mo_join')
+const mo_help = document.querySelector('.mo_help')
+const mo_bg= document.querySelectorAll('.mo_bg a')
+
+mo_nav.style.display='none'
+mo_bar.addEventListener('click',()=>{
+    mo_nav.classList.add('basket')
+    mo_nav.style.display='block'
+})
+mo_close.addEventListener('click',()=>{
+    mo_nav.style.display='none'
+})
+men_contents.style.display='none'
+women_contents.style.display='none'
+let men_result = true
+let women_result = true
+
+men_title.addEventListener('click',()=>{
+    men_result = !men_result
+    if(men_result == false){
+        men_contents.style.display='block'
+        women_contents.style.display='none'
+        men_plus.src = './img/icon/check_indeterminate_small_white.png'
+        women_plus.src = './img/icon/add_white.png'
+        women_result = true
+    }else{
+        men_contents.style.display='none'
+        men_plus.src = './img/icon/add_white.png'
+    }
+})
+women_title.addEventListener('click',()=>{
+    women_result = !women_result
+    if(women_result == false){
+        men_contents.style.display='none'
+        women_contents.style.display='block'
+        women_plus.src = './img/icon/check_indeterminate_small_white.png'
+        men_result = true
+        men_plus.src = './img/icon/add_white.png'
+    }else{
+        women_contents.style.display='none'
+        women_plus.src = './img/icon/add_white.png'
+    }
+})
+
+mo_login.addEventListener('click',()=>{
+    window.location = './login.html'
+})
+
+mo_help.addEventListener('click',()=>{
+    window.location = './service.html'
+})
+
+for(let i of mo_bg){
+    console.log(i)
+    i.addEventListener('click',()=>{
+        window.location = './product_all.html'
+    })
+}

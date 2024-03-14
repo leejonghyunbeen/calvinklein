@@ -324,6 +324,10 @@ main .fashion_product li .product_info a {
 main .fashion_product li .product_info p {
     font-size: 0.813rem;
 }
+main .fashion_product li .product_info span  {
+    font-size: 0.813rem;
+}
+
 main .fashion_product li .product_info p em {}
 main .fashion_product li .product_info p del {}
 /* 카테고리 */

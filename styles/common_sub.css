@@ -12,6 +12,147 @@ header .text_box .wrap {
 } /* 텍스트와 < >아이콘*/
 
 
+
+.mo_nav{
+    display: none;
+}
+.mo_bar{display: none;}
+/* mo */
+.mo_nav {
+    z-index: 999;
+    width: 100vw; position: fixed;
+    height: 100vh; background: rgba(238, 233, 233, 0.5);
+}
+
+
+/* 공통  */
+.mo_nav a {
+    color: #fff;
+}
+
+.mo_nav ul li{
+    display: flex ; flex-flow: row nowrap; justify-content: space-between;
+    padding: 15px 4px 15px 0; border-bottom: 1px solid #696969;
+}
+
+.mo_nav ul li a{
+    font-size: 0.875rem; 
+}
+.mo_nav ul li img {
+    width: 14px;
+}
+
+
+.mo_nav .mo_navall {
+    background: #000; width: 90%;height: 100vh;
+    padding: 0 13px 0 20px;
+}
+
+.mo_nav .mo_close{
+    display: flex;
+    justify-content: right;
+    padding: 18px 0 4px 0;
+}
+.mo_nav h1 a{
+    font-size: 1.5rem; font-weight: 400;
+}
+
+
+.mo_nav .mo_title {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    padding: 18px 0 0px 0;
+}
+.mo_nav .mo_women .mo_title{
+    padding-bottom: 30px;
+}
+
+
+.mo_nav .mo_join {
+    display: flex; padding-right: 4px;
+    justify-content: space-between;
+    padding:18px 0 ; border-bottom: 1px solid #696969;
+}
+
+.mo_nav .mo_join img {
+    width: 14px;
+}
+
+
+.mo_nav .mo_help {
+    display: flex ; flex-flow: column nowrap;
+    padding-top: 40px;
+} 
+
+.mo_nav .mo_help a {
+    font-size: 0.875rem ;font-weight: 400;
+}
+.mo_nav .mo_help div {
+    display: flex; padding: 5px 0;
+}
+.mo_nav .mo_help img {
+    width: 16px; margin-right: 10px;
+}
+
+.mo_nav .mo_bg {
+    display: flex; flex-flow: column nowrap;
+}
+.mo_nav .mo_bg .mo_first_bg{
+    background-image: url(../img/calvinklein_imgaes/mo_dropdown_celeb_kazuha_231212.jpg);
+    width: 100%;  
+    height: 92px; background-position:center top;
+    position: relative;    margin-bottom: 10px;
+}
+.mo_nav .mo_bg .mo_first_bg span  {
+    position: absolute;
+    color: #fff; font-size: 0.75rem; font-weight: 500;
+    left: 10px; top: 30px;
+}
+.mo_nav .mo_bg .mo_second_bg{
+    background-image: url(../img/calvinklein_imgaes/mo_dropdown_celeb_jennie_231212.jpg);
+    width: 100%;  
+    height: 92px; background-position:center top;
+    position: relative;
+    background-size: cover; 
+    margin-bottom: 10px;
+}
+.mo_nav .mo_bg .mo_second_bg span  {
+    position: absolute;
+    color: #fff; font-size: 0.75rem; font-weight: 500;
+    left: 10px; top: 30px;
+}
+.mo_nav .mo_bg .mo_second_bg{
+    background-image: url(../img/calvinklein_imgaes/mo_dropdown_celeb_jennie_231212.jpg);
+    width: 100%;  
+    height: 92px; background-position:center top;
+    position: relative;
+    background-size: cover;
+}
+.mo_nav .mo_bg .mo_second_bg span  {
+    position: absolute;
+    color: #fff; font-size: 0.75rem; font-weight: 500;
+    left: 10px; top: 30px;
+}
+.mo_nav .mo_bg .mo_third_bg{
+    background-image: url(../img/calvinklein_imgaes/mo_giftbox_230509.jpg);
+    width: 100%;  
+    background-size: cover;
+    height: 92px; background-position:center top;
+    position: relative;
+}
+.mo_nav .mo_bg .mo_third_bg span  {
+    position: absolute;
+    color: #fff; font-size: 0.75rem; font-weight: 500;
+    left: 10px; top: 30px;
+}
+
+
+
+
+
+
+
+
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     display: none;
 }
@@ -19,9 +160,12 @@ header .text_box .wrap .a_text {
     display: flex; align-items: center;
 }
 header .text_box .wrap .a_text a {
-    padding: 10px 0;
+    padding: 10px 0; font-size: 0.813rem;
     color: #fff; background: #000; }
-header .text_box .wrap .a_text a span {color: #fff; text-decoration: underline;  padding-left: 5px;}
+header .text_box .wrap .a_text a span {
+    color: #fff; text-decoration: underline;  padding-left: 5px;
+    font-size: 0.813rem;
+}
 header .text_box .wrap .next_freeview {
 }
 header .text_box .wrap .next_freeview .prev {position: absolute; left: 100px;} /* 이전이미지 */
@@ -121,7 +265,7 @@ header .header_categori a {color: #000; margin-right: 15px;
 footer {margin-top: 20px; padding: 0 40px  0;
 }
 footer .first_footer {
-    display: flex; flex-flow: row nowrap; padding: 25px 0;
+    display: flex; flex-flow: row wrap; padding: 25px 0;
 }
 footer .first_footer > * { 
     width: 15%; display: flex; flex-flow: column;
@@ -133,7 +277,7 @@ footer .first_footer .contents3 {}
 footer .first_footer .contents4 {}
 footer .first_footer .contents h1{padding-bottom: 8px;}
 footer .first_footer .contents a{
-    padding-bottom: 8px;
+    padding-bottom: 8px; font-size: 0.813rem;
     display: block;}
 .footer_last {
     display: flex; justify-content: space-between;
