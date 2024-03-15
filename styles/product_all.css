@@ -117,7 +117,11 @@ main section .filter .product_width .text p  {
 main section .filter  img {width: 30px; height: 20px;
     }
 
-
+main .porduct_box button {
+    display: none;
+    width: 100%; background: #000; color: #fff; padding: 11px 32px;
+    width: calc(100% - 8px);
+}
 main section .filter .main_filter button {
     color: #fff;
     display: flex; align-items: center;

@@ -1,0 +1,32 @@
+/* 1200px -> 1020px ->760px -> */
+@media screen and (max-width:1200px){
+    main section .filter {
+        flex-flow: column nowrap;
+    }
+    main .main_filter {
+        width: 100%;
+    }
+    main .main_filter button {
+        width: 100%; justify-content: center;
+    }
+    main section .filter .product_width {
+        width: 100%; justify-content: space-between;
+    }
+    main .porduct_box button{
+        display: block;
+    }
+    main section .porduct_box a {
+        width: 33%;
+    }
+    main section .filter .width_third{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    main section .filter .product_width{
+        display: none;
+    }
+    main section .porduct_box a {
+        width: 50%;
+    }
+}

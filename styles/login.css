@@ -1,6 +1,6 @@
 /* #login_wrap main */
 #login_wrap  {
-    max-width: 460px; margin: 0 auto;
+    width: 460px; margin: 0 auto;
 }
 #login_wrap  #loginFrm {
     /* border: 1px solid #ccc; border-radius:5px ; */ 
@@ -101,7 +101,10 @@
 #login_wrap #loginFrm fieldset .login_container .benefit .contents .contents_sub{
     display: flex; justify-content: space-between; 
 }
-#login_wrap #loginFrm fieldset .login_container .benefit .contents .contents_sub p {border-bottom: 1px solid #000; padding: 14px 14px 14px; margin: 4px;}
+#login_wrap #loginFrm fieldset .login_container .benefit .contents .contents_sub p {    width: 25%;
+    border-bottom: 2px solid #000; padding: 14px 14px 14px;
+    margin: 4px; text-align: center;
+    background: #fff;}
 #login_wrap #loginFrm fieldset .login_container .benefit .contents .bottom {
     width: 100%;
 }

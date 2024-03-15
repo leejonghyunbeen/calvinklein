@@ -1,0 +1,14 @@
+/* 1200px -> 1020px ->760px -> */
+
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:1020px){
+    #login_wrap{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:768px){
+
+}
+

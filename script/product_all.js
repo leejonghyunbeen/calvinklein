@@ -8,15 +8,18 @@ fetch('./script/product_dat.json')
         const price =document.createElement('p')
         const color = document.createElement('p')
         const indexFormatted = (index+1).toString().padStart(3,'0');
+        const basktet_btn = document.createElement('button')
         listItem.href ='#'
         listItem.innerHTML = `<p class="photo"><img src="./img/product_all/thumbnail_${indexFormatted}.jpg"></p>`
         list_title.textContent =porduct.title
         price.textContent =porduct.price
         color.textContent = porduct.color
+        basktet_btn.innerHTML = porduct.btn
         porduct_box.appendChild(listItem)
         listItem.appendChild(list_title)
         listItem.appendChild(price) 
         listItem.appendChild(color)
+        listItem.appendChild(basktet_btn)
         // console.log(listItem.children[0].children[0].src)
         listItem.addEventListener('mouseover',function(){
             // console.log(indexFormatted)
