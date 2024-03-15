@@ -7,11 +7,11 @@
     main .Outerwear_freebies img {
         width: 100%;
     }
-}
-@media screen and (max-width:1020px){
     main .Outerwear_freebies{
         display: flex; flex-flow: column nowrap;
     }
+}
+@media screen and (max-width:1020px){
     .category_box{
         width: 100% !important;
         margin: 0 !important;
