@@ -156,7 +156,6 @@ main .basket_background
 main .basket_background .basket_product {
     float: right;
     height: 100vh;
-    width: calc(25%);
     background: #fff;}/* 컨텐츠 내용 */
 main .basket_background .basket_product .prodiuct_top {
     margin: 0 auto;

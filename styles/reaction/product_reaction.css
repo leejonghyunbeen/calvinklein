@@ -1,0 +1,18 @@
+/* 1200px -> 1020px ->760px -> */
+
+@media screen and (max-width:1200px){
+
+    main .main_product .product_left img{
+        display: none;
+    }
+    main .main_product .product_left img:nth-of-type(1){
+       display: block;
+    }
+}
+@media screen and (max-width:1020px){
+
+
+}
+@media screen and (max-width:768px){
+
+}

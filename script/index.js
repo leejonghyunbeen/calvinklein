@@ -16,9 +16,11 @@ let thide_box = new Swiper('#thide_box',{
 
 
 
+const membership = document.querySelector('.member_join a')
 
-
-
+membership.addEventListener('click',()=>{
+    window.location = './login.html'
+})
 
 const basket_background =document.querySelector('.basket_background')
 basket_background.style.display='none'

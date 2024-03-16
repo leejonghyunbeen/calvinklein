@@ -240,17 +240,60 @@ header .header_categori a {color: #000; margin-right: 15px;
 .nav_background .nav_contents_background .nav_contents .content_main .nav_left {
     display: flex;
 }
+
+
+
+/* 네비 호버 */
+.nav_top .menu a{
+    position: relative;
+}
+.nav_top .menu a::after{
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    width: 0; height: 3px;
+    display: inline-block;
+    background: #f7f7f7;
+    transition: 0.2s ease-in-out;
+}
+.nav_top .menu a:hover::after{
+    width: 100%;
+}
+.nav_left a {
+    position: relative;
+}
+.nav_left a::after{
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 0;
+    width: 0; height: 3px;
+    display: inline-block;
+    background: #f7f7f7;
+    transition: 0.2s ease-in-out;
+}
+
+.nav_left  a:hover::after{
+    width: 100%;
+}
+
+
+
 /* 제목열 */
 .nav_background .nav_contents_background .nav_contents .content_main .nav_left p {
     color: #aaa; font-size: 0.813rem; margin-bottom: 40px;
 }
 .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf {display: flex; flex-flow: column; margin-right: 200px;}
-.nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf a {margin-bottom: 20px; color: #fff;font-size: 0.813rem;}
+.nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf a {
+    width: max-content;
+    margin-bottom: 20px; color: #fff;font-size: 0.813rem;}
 .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_letf .exclusive {color: #78b6ed;}
 .nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_right {
     margin-top: 56px; display: flex; flex-flow: column nowrap;  
 }
-.nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_right a {margin-bottom: 20px; color: #fff; font-size: 0.813rem;}
+.nav_background .nav_contents_background .nav_contents .content_main .nav_left .nav_sub_right a {width: max-content;
+    margin-bottom: 20px; color: #fff; font-size: 0.813rem;}
 
 .nav_background .nav_contents_background .nav_contents .content_main .nav_right{ display: flex;}
 .nav_background .nav_contents_background .nav_contents .content_main .nav_right a{display: flex; flex-flow: column nowrap; width: 50%;}

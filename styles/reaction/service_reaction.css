@@ -1,0 +1,23 @@
+/* 1200px -> 1020px ->760px -> */
+
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:1020px){
+
+    main section #service_slide {
+        flex-flow: column nowrap;
+    }
+    main section #service_slide .nav .operation_imfo{
+
+    }
+    main section #service_slide .nav .category{
+        margin: 0; align-items: center;
+    }
+    main section #service_slide .nav .operation_imfo {
+        margin: 0; text-align: center;
+    }
+}
+@media screen and (max-width:768px){
+
+}
