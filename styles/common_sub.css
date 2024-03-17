@@ -228,6 +228,9 @@ header .header_categori a {color: #000; margin-right: 15px;
 .nav_background .nav_contents_background .nav_contents .nav_top .menu a {
     font-size: 0.813rem; margin-right: 20px; color: #aaa;
 }
+.nav_background .nav_contents_background .nav_contents .nav_top .menu a:hover {
+    color: #fff;
+}
 .nav_background .nav_contents_background .nav_contents .nav_top .close {}
 .nav_background .nav_contents_background .nav_contents .nav_top .close a {}
 .nav_background .nav_contents_background .nav_contents .nav_top .close a img { 

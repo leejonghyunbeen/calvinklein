@@ -81,7 +81,7 @@ main .sub_categori a {
 main .main_product {display: flex;}
 main .main_product .product_left { 
     display: flex; flex-flow: row wrap; margin-left: 35px; padding-top: 10px; 
-    width: 1200px;
+    max-width: 1200px;
 }
 main .main_product .product_left p {
     margin-right: 10px; width: calc(50% - 10px); margin-bottom: 10px;
@@ -111,7 +111,7 @@ main .main_product .product_left .product_18 img{}
 
 /* 오른쪽 */
 main .main_product .product_right {
-    width: calc(100% - 1200px); padding: 0 35px;
+ padding: 0 35px;
 } 
 main .main_product .product_right .brand{
     margin-top: 10px;
@@ -243,7 +243,7 @@ main .main_product .product_right .shopping dl dd:nth-child(17)
 
 /* 상품 */
 main .product_box {
- width: 1900px; overflow: hidden;
+max-width:  1900px; overflow: hidden;
 }
 main .product_contents {
 }

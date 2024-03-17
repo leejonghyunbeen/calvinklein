@@ -1,0 +1,146 @@
+main {}
+main section {
+    padding: 0 40px;
+}
+
+
+main .main_bannber{
+    display: flex;  align-items: center;
+}
+main .main_bannber img{
+    width: 50%;
+}
+main .main_bannber h1{ text-align: center;
+    width: 50%; margin: 0 auto; font-size: 2rem; font-weight: 500;
+}
+main .main_bannber h1 em{
+    font-size: 1.5rem;font-weight: 500;
+}
+main section .all_contents {
+    text-align: center;
+    margin: 0 0 13px;
+    padding: 34px 0 5px;
+}
+main section .all_contents h1 {
+    font-size: 2rem; font-weight: 400;
+}
+main section .sub_category {
+    padding: 10px 9.6px 19px;
+}
+main section .sub_category a {
+    font-size: 0.813rem;
+}
+main section .sub_category a:nth-of-type(1){
+    color: #a5a5a5; 
+}
+main section .sub_category a:nth-of-type(2){
+    font-weight: 400;
+}
+main section  .category {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 24px 0;
+}
+main section  .category .contents_box {
+    margin: 0 9.6px 0 ; width: 20%;
+    display: flex; flex-flow: column nowrap;
+}
+main section  .category .contents_box a:nth-of-type(1){
+    margin-bottom: 15px;
+}
+main section  .category .contents_box a:nth-of-type(2){
+    margin-bottom: 10px; font-weight: 400 ;
+}
+main section  .category .contents_box a:nth-of-type(3){
+    text-decoration: underline;
+}
+main section  .category .contents_box img{
+    width: 100%;
+}
+
+main section .porduct_box {}
+main section .porduct_box a {
+    width: 25%;
+    display: inline-block;
+    padding: 0 0 15px;
+    margin: 11px 0 40px;
+}
+main section .porduct_box a h1 {
+    margin-bottom: 6px; font-size: 0.813rem;
+    padding-left: 4px;
+}
+main section .porduct_box a p:nth-of-type(1) {
+    margin-bottom: 2px; font-size: 0.75rem; font-weight: 600;
+    padding-left: 4px;
+}
+main section .porduct_box a p:nth-of-type(2){
+    font-size: 0.813rem; padding-left: 4px; 
+    font-weight: 700; margin-bottom: 6px;
+}
+main section .porduct_box .photo {
+    overflow: hidden; 
+}
+main section .porduct_box a img {
+    width: 100%;
+    padding: 0 4px;
+}
+main section .porduct_box p{
+    font-size: 0.813rem ; padding-left: 4px;
+}
+main section .show_more {
+    display: flex; flex-flow: column;
+    align-items: center;
+}
+main section .show_more .text {}
+main section .show_more .text p {
+    font-size: 0.75rem; font-weight: 500;
+    margin-bottom: 5px;
+}
+main section .show_more .bar {
+    content: ''; width: 224px; height: 4px;
+    display: inline-block; background: #a5a5a5;
+    position: relative; margin-bottom: 16px;
+}
+main section .show_more .bar .bar_sub {
+    content: ''; width: 10px; height: 4px;
+    display: inline-block; background: #000;
+    position: absolute;
+}
+main section .show_more button{
+
+    width: 300px;
+    padding: 11px 32px; border: 1px solid #000;
+    margin-bottom: 64px
+}
+main section .show_more button:hover{
+    background: #000; 
+    color: #fff;
+    transition: 0.3s;
+}
+main section .filter{
+    /* position: fixed; top: 40px; */
+    display: flex; align-items: center; justify-content: space-between; padding:  0 6px;}
+main section .filter .product_width {
+    display: flex; align-items: center;
+}
+main section .filter .product_width .text {
+    padding: 10px 0; margin-right: 18px;
+}
+main section .filter .product_width .text p  {
+    font-size: 0.813rem; font-weight: 400;
+}
+main section .filter  img {width: 30px; height: 20px;
+    }
+
+main .porduct_box button {
+    display: none;
+    width: 100%; background: #000; color: #fff; padding: 11px 32px;
+    width: calc(100% - 8px);
+}
+main section .filter .main_filter button {
+    color: #fff;
+    display: flex; align-items: center;
+    padding: 11px 30px; background: #000;
+}
+main section .filter  .main_filter img {margin-top: 5px; margin-left: 10px;}
+
+

@@ -78,6 +78,21 @@ nav_close.addEventListener('click',()=>{
     nav_background.style.display = 'none'
 })
 
+
+
+const category_a = document.querySelectorAll('.nav_left a')
+for(let i of category_a){
+    i.addEventListener('click',()=>{
+        window.location = './product_all2.html'
+    })
+}
+const nav_right = document.querySelectorAll('.nav_right a')
+
+for(let i of nav_right){
+    i.addEventListener('click',()=>{
+        window.location = './product.html'
+    })
+}
 // 전체 상품 가기
 const gender_nav =document.querySelectorAll('nav a')
 for(let i of gender_nav){

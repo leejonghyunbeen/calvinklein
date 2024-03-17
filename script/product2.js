@@ -1,5 +1,5 @@
 const porduct_box = document.querySelector('.porduct_box')
-fetch('./script/product_dat.json')
+fetch('./script/product_data2.json')
 .then(response => response.json())
 .then(data=>{
     data.forEach((porduct,index)=>{
@@ -10,7 +10,7 @@ fetch('./script/product_dat.json')
         const indexFormatted = (index+1).toString().padStart(3,'0');
         const basktet_btn = document.createElement('button')
         listItem.href ='#'
-        listItem.innerHTML = `<p class="photo"><img src="./img/product_all/thumbnail_${indexFormatted}.jpg"></p>`
+        listItem.innerHTML = `<p class="photo"><img src="./img/product_img2/thumbnail_${indexFormatted}.jpg"></p>`
         list_title.textContent =porduct.title
         price.textContent =porduct.price
         color.textContent = porduct.color
@@ -23,16 +23,15 @@ fetch('./script/product_dat.json')
         // console.log(listItem.children[0].children[0].src)
         listItem.addEventListener('mouseover',function(){
             // console.log(indexFormatted)
-            this.children[0].children[0].src = `./img/product_all/thumbnail_${indexFormatted}_sub.jpg`
+            this.children[0].children[0].src = `./img/product_img2/thumbnail_${indexFormatted}_sub.jpg`
         })
         listItem.addEventListener('mouseout',function(){
-            this.children[0].children[0].src = `./img/product_all/thumbnail_${indexFormatted}.jpg`      
+            this.children[0].children[0].src = `./img/product_img2/thumbnail_${indexFormatted}.jpg`      
         })
         listItem.addEventListener('click',(e)=>{
             e.preventDefault()
-            window.location= './product.html'
+            window.location = './product.html'
         })
-
         // 필터 
         const btn_all = document.querySelectorAll('.width_btn')
         const img_all = document.querySelectorAll('.width_btn img')
@@ -58,12 +57,6 @@ fetch('./script/product_dat.json')
         })
     })
 })
-const category_link =document.querySelectorAll('.contents_box')
-for(let i of category_link){
-    i.addEventListener('click',()=>{
-        window.location= './product_all2.html'
-    })
-}
 
 
 
