@@ -88,5 +88,9 @@ for(let i of favorite){
 let product_slide = new Swiper('.product_box',{
     slidesPerView: 4,
     spaceBetween:8,
+    navigation:{
+        nextEl:'.product_box .swiper-button-next',
+        prevEl:'.product_box .swiper-button-prev',
+    }
 })
 

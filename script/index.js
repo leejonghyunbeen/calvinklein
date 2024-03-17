@@ -2,16 +2,28 @@
 let product_slide = new Swiper('.product_allbox',{
     slidesPerView: 4.1,
     spaceBetween:10,
+    navigation:{
+        nextEl:'.product_allbox .swiper-button-next',
+        prevEl:'.product_allbox .swiper-button-prev',
+    }
 })
 
 let allbox_second = new Swiper('#allbox_second',{
     slidesPerView: 4.1,
     spaceBetween:10,
+    navigation:{
+        nextEl:'#allbox_second .swiper-button-next',
+        prevEl:'#allbox_second .swiper-button-prev',
+    }
 })
 
 let thide_box = new Swiper('#thide_box',{
     slidesPerView: 4.1,
     spaceBetween:10,
+    navigation:{
+        nextEl:'#thide_box .swiper-button-next',
+        prevEl:'#thide_box .swiper-button-prev',
+    }
 })
 
 
@@ -110,7 +122,7 @@ thide_contents.forEach((target, index) => {
 
 
 const header_nav =document.querySelectorAll('header .right a')
-const nav_link = ['#','./login.html','./wishlist.html','./shopping_basket.html']
+const nav_link = ['./service.html','./login.html','./wishlist.html','./shopping_basket.html']
 
 header_nav.forEach((target,index)=>{
     target.addEventListener('click',(e)=>{

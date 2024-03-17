@@ -29,7 +29,7 @@ for(let i of  first_footer){
     })
 }
 const header_nav =document.querySelectorAll('header .right a')
-const nav_link = ['#','./login.html','./wishlist.html','./shopping_basket.html']
+const nav_link = ['./service.html','./login.html','./wishlist.html','./shopping_basket.html']
 
 header_nav.forEach((target,index)=>{
     target.addEventListener('click',(e)=>{

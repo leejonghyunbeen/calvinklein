@@ -41,6 +41,43 @@ main .holiyday .holiyday_buy .brand_saie:hover{
 
 .product_allbox  {
     width: 1900px;
+    position: relative;
+}
+
+.product_allbox .prev2{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
+}
+.product_allbox .next2{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
+}
+
+#allbox_second .prev{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
+}
+#allbox_second .next{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
+}
+#thide_box .prev3{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
+}
+#thide_box .next3{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
+}
+
+#thide_box {
+    position: relative;
 }
 main .product_content {
     display: flex; 
@@ -78,6 +115,9 @@ main #thide_box{
     margin: 0 auto;
     width: calc(100% -  40px);
     margin-bottom: 40px;
+}
+main #allbox_second{
+    position: relative;
 }
 main  del {
     text-decoration: line-through; font-size: 0.813rem;

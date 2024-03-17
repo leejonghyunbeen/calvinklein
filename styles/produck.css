@@ -243,7 +243,18 @@ main .main_product .product_right .shopping dl dd:nth-child(17)
 
 /* 상품 */
 main .product_box {
+    position: relative;
 max-width:  1900px; overflow: hidden;
+}
+.product_box .prev{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
+}
+.product_box .next{
+    position: absolute;
+    top: 40%; background: #3b3b3b; padding: 20px 23px;
+    border-radius: 50%;
 }
 main .product_contents {
 }
